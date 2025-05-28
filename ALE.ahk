@@ -99,7 +99,7 @@ else if (choice = "41") {
 else if (choice = "42")
     formatted := " Riporto recapiti da altri gestionali: "
 else if (choice = "43")
-    formatted := " Non presenti altri recapiti telefonici"
+    formatted := " - NON PRESENTI ALTRI RECAPITI TELEFONICI"
 	else if (choice = "9")
     formatted := "AVVISATO"
 else {
