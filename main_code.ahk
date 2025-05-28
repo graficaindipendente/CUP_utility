@@ -1,9 +1,9 @@
-﻿; versione 1.98
+﻿; versione 1.98.2
 
 F1::
 FormatTime, date, , dd/MM/yyyy HH:mm
 
-InputBox, choice, SELEZIONA CODICE, ♥ 𝗔𝗖𝗖𝗘𝗧𝗧𝗔`n   𝟭0 → Utente ACCETTA data e struttura letto note`n   𝟭1 → Utente ACCETTA data e struttura letto note c/MAIL`n   𝟭2 → Utente ACCETTA data e struttura letto note c/MAIL con allegato modulo consenso informato`n   𝟭3 → Utente ACCETTA data e struttura letto note c/MAIL con allegato preparazione`n   𝟭4 → Utente ACCETTA data e struttura letto note c/MAIL e PagoPA`n`n♦ 𝗥𝗜𝗙𝗜𝗨𝗧𝗔`n   𝟮0 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍`n   𝟮1 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 gia eseguito in LP`n   𝟮2 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 troppo lontano.`n   𝟮3 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 troppo presto.`n   𝟮4 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 per problematiche lavorative.`n   𝟮5 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 per problematiche di trasporto.`n   𝟮6 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 presente prenotazione più favorevole`n`n♣ 𝗡𝗢𝗡 𝗥𝗜𝗦𝗣𝗢𝗡𝗗𝗘`n   𝟯0 → Utente NON RISPONDE`n   𝟯1 → Utente NON RISPONDE lasciato messaggio in segreteria`n   𝟯2 → Utente NON RISPONDE non lascio altri messaggi in segreteria`n   𝟯3 → Utente NON RISPONDE senza segreteria`n   𝟯4 → Utente RISPONDE MA `n   𝟯5 → Utenza STACCATA: non parte la chiamata`n   𝟯6 → Utente NON RISPONDE e non sono presenti altri recapiti telefonici`n   𝟯7 → Utente NON RAGGIUNGIBILE: utenza spenta o non raggiungibile`n   𝟯8 → Utente ha BLOCCATO il nostro recapito cosi da rendere impossibile ogni tentativo`n`n♠ 𝗔𝗟𝗧𝗥𝗢`n   𝟰0 → Data e Ora `n   𝟰1 → NOTA DA ALTRO OPERATORE: `n   𝟰2 → Riporto recapiti da altri gestionali: `n   𝟰3 → Non presenti altri recapiti telefonici `n   𝟵0  → AVVISATO,,660,675,600
+InputBox, choice, SELEZIONA CODICE, ♥ 𝗔𝗖𝗖𝗘𝗧𝗧𝗔`n   𝟭0 → Utente ACCETTA data e struttura letto note`n   𝟭1 → Utente ACCETTA data e struttura letto note c/mail`n   𝟭2 → Utente ACCETTA data e struttura letto note c/mail con allegato modulo consenso informato`n   𝟭3 → Utente ACCETTA data e struttura letto note c/mail con allegato preparazione`n   𝟭4 → Utente ACCETTA data e struttura letto note c/mail e PagoPA`n`n♦ 𝗥𝗜𝗙𝗜𝗨𝗧𝗔`n   𝟮0 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍`n   𝟮1 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 gia eseguito in LP`n   𝟮2 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 troppo lontano.`n   𝟮3 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 troppo presto.`n   𝟮4 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 per problematiche lavorative.`n   𝟮5 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 per problematiche di trasporto.`n   𝟮6 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 presente prenotazione più favorevole`n`n♣ 𝗡𝗢𝗡 𝗥𝗜𝗦𝗣𝗢𝗡𝗗𝗘`n   𝟯0 → Utente NON RISPONDE`n   𝟯1 → Utente NON RISPONDE lasciato messaggio in segreteria`n   𝟯2 → Utente NON RISPONDE non lascio altri messaggi in segreteria`n   𝟯3 → Utente NON RISPONDE senza segreteria`n   𝟯4 → Utente RISPONDE MA `n   𝟯5 → Utenza STACCATA: non parte la chiamata`n   𝟯6 → Utente NON RISPONDE e non sono presenti altri recapiti telefonici`n   𝟯7 → Utente NON RAGGIUNGIBILE: utenza spenta o non raggiungibile`n   𝟯8 → Utente ha BLOCCATO il nostro recapito cosi da rendere impossibile ogni tentativo`n`n♠ 𝗔𝗟𝗧𝗥𝗢`n   𝟰0 → Data e Ora `n   𝟰1 → NOTA DA ALTRO OPERATORE: `n   𝟰2 → Riporto recapiti da altri gestionali: `n   𝟰3 → Non presenti altri recapiti telefonici `n   𝟵0  → AVVISATO,,660,675,600
 if ErrorLevel
     return
 
@@ -13,13 +13,13 @@ formatted := ""
 if (choice = "10" or choice = "1")
     formatted := "Ale " . date . "h Utente ACCETTA data e struttura, letto note"
 else if (choice = "11")
-    formatted := "Ale " . date . "h Utente ACCETTA data e struttura, letto note c/MAIL"
+    formatted := "Ale " . date . "h Utente ACCETTA data e struttura, letto note c/mail"
 else if (choice = "12")
-    formatted := "Ale " . date . "h Utente ACCETTA data e struttura, letto note c/MAIL con allegato modulo consenso informato"
+    formatted := "Ale " . date . "h Utente ACCETTA data e struttura, letto note c/mail con allegato modulo consenso informato"
 else if (choice = "13")
-    formatted := "Ale " . date . "h Utente ACCETTA data e struttura, letto note c/MAIL con allegato preparazione"
+    formatted := "Ale " . date . "h Utente ACCETTA data e struttura, letto note c/mail con allegato preparazione"
 else if (choice = "14")
-    formatted := "Ale " . date . "h Utente ACCETTA data e struttura, letto note c/MAIL e PagoPA"
+    formatted := "Ale " . date . "h Utente ACCETTA data e struttura, letto note c/mail e PagoPA"
 
 else if (choice = "20" or choice = "2") {
     InputBox, extra, Codice Disdetta, Inserisci le ultime 4 cifre del codice
@@ -89,7 +89,7 @@ else if (choice = "39")
 	else if (choice = "4")
     formatted := date . "h "
 else if (choice = "40")
-    formatted := date . "h "
+    formatted :=  "Ale " . date . "h "
 else if (choice = "41") {
     InputBox, extra, Altro Operatore, Inserisci la nota dell'altro operatore
     if ErrorLevel
@@ -103,7 +103,7 @@ else if (choice = "43")
 	else if (choice = "9")
     formatted := "AVVISATO"
 else {
-    MsgBox, 48, Errore, Codice non valido!
+    MsgBox, 48, Errore 404, Codice non valido!
     return
 }
 
