@@ -1,27 +1,27 @@
 ﻿F12::
 {
-    FormatTime, dataOra,, dd-MM-yyyy HH:mm
+    FormatTime, dataOra,, dd/MM HH:mm
     SendInput %dataOra% Confermato
     return
 }
 
 F11::
 {
-    FormatTime, dataOra,, dd-MM-yyyy HH:mm
+    FormatTime, dataOra,, dd/MM HH:mm
     SendInput %dataOra% Non Risponde
     return
 }
 
 F10::
 {
-    FormatTime, dataOra,, dd-MM-yyyy HH:mm
+    FormatTime, dataOra,, dd/MM HH:mm
     SendInput %dataOra% Non Risponde con Segreteria
     return
 }
 
 F9::
 {
-    FormatTime, dataOra,, dd-MM-yyyy HH:mm
+    FormatTime, dataOra,, dd/MM HH:mm
     SendInput %dataOra% Segreteria
     return
 }
@@ -73,6 +73,6 @@ NonParte:
 
 InserisciTesto(testo) {
     Gui, PhoneStatus:Destroy
-    FormatTime, dataOra,, dd-MM-yyyy HH:mm
+    FormatTime, dataOra,, dd/MM HH:mm
     SendInput %dataOra% %testo%
 }
