@@ -28,7 +28,7 @@ F9::
 
 F8::
 {
-    Gui, PhoneStatus:New, +AlwaysOnTop +ToolWindow, Esito Chiamata
+    Gui, PhoneStatus:New, +AlwaysOnTop +ToolWindow, NA3 Sud - Plugin Esito Contatto v0.11
     Gui, Add, Text,, Seleziona un'opzione:
 
     Gui, Add, Button, gConfermato w250, Confermato
