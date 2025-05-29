@@ -143,24 +143,24 @@ F9::
         return
     }
 
-    Sleep, 50  ; Attendi stabilizzazione
+    Sleep, 10  ; Attendi stabilizzazione
 
     ; Clicca sul campo di input (regola se necessario)
     CoordMode, Mouse, Window
 
     MouseClick, left, 137, 614  ; Cambia queste coordinate!
-    Sleep, 50
+    Sleep, 10
 
     ; Incolla il numero
     Clipboard := phone
     Send, ^v
-    Sleep, 50
+    Sleep, 10
 
     ; Clic finale alle coordinate richieste (1049, 434 relative alla finestra)
     MouseClick, left, 394, 614
 
     ; Ripristina gli appunti originali
-    Sleep, 50
+    Sleep, 10
     Clipboard := ClipSaved
 }
 return
@@ -213,13 +213,13 @@ return
     MouseClick, left, 403, 563
 
         ; Doppio clic alle coordinate 78,246
-        Sleep, 200
+        Sleep, 50
         MouseClick, left, 78, 246, 2
 		
 		
 
         ; Attendere brevemente e copiare la selezione
-        Sleep, 200
+        Sleep, 10
         Send, ^c
     } else {
         MsgBox, La finestra non è attiva.
