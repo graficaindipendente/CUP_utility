@@ -5,3 +5,4 @@ Segreteria	Segreteria
 Occupato	Occupato
 Risponde e Riattacca	Risponde e Riattacca
 Non parte la telefonata	Non parte la telefonata
+testo	testo

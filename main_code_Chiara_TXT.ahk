@@ -1,7 +1,7 @@
 ﻿F8::
 {
     Gui, PhoneStatus:Destroy
-    Gui, PhoneStatus:New, +AlwaysOnTop +ToolWindow, NA3 Sud - Plugin Esito Contatto v0.11
+    Gui, PhoneStatus:New, +AlwaysOnTop +ToolWindow, F8 Esito Contatto 
     Gui, Font, s10
     Gui, Add, Text,, Seleziona un'opzione:
 
@@ -29,7 +29,8 @@
         Gui, Add, Button, gGestioneClick v%id% w250, %visuale%
     }
 
-    Gui, Show,, Esito chiamata
+    Gui, Add, Text,, v0.12
+    Gui, Show,, F8 Esito Contatto
     return
 }
 
@@ -40,7 +41,7 @@ GestioneClick:
     testoDaInserire := bottoni_%A_GuiControl%
     Gui, PhoneStatus:Destroy
 
-    FormatTime, dataOra,, dd/MM HH:mm
+    FormatTime, dataOra,, dd/MM/yy HH:mm
     SendInput %dataOra% %testoDaInserire%
     return
 }
