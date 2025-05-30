@@ -117,7 +117,6 @@ else {
 SendInput %formatted%
 return
 
-
 F9::
 {
     ; Salva gli appunti correnti
