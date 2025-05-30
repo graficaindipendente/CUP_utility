@@ -1,3 +1,0 @@
-bottone 1	testo 1
-bottone 2	testo 2
-bottone 3	testo 3

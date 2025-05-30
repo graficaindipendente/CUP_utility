@@ -116,6 +116,16 @@ else {
 SendInput %formatted%
 return
 
+
+F6::
+Send, alessandro.piovan
+return
+F7::
+Send, Maggio!2025
+return
+
+
+
 F9::
 {
     ; Salva gli appunti correnti
