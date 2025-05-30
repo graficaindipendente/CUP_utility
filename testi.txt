@@ -1,8 +1,3 @@
-Confermato	Confermato
-Non Risponde	Non Risponde
-Non Risponde + Segreteria	Non Risponde + Segreteria
-Segreteria	Segreteria
-Occupato	Occupato
-Risponde e Riattacca	Risponde e Riattacca
-Non parte la telefonata	Non parte la telefonata
-testo	testo
+bottone 1	testo 1
+bottone 2	testo 2
+bottone 3	testo 3
