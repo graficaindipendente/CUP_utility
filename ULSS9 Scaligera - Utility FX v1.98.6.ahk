@@ -1,8 +1,7 @@
 ﻿F1::
 FormatTime, date, , dd/MM/yyyy HH:mm
 
-
-InputBox, choice, ULSS9 Scaligera - Utility FX v1.99.5, ♥ 𝗔𝗖𝗖𝗘𝗧𝗧𝗔`n   𝟭0 → Utente ACCETTA data e struttura letto note`n   𝟭1 → Utente ACCETTA data e struttura letto note c/mail`n   𝟭2 → Utente ACCETTA data e struttura letto note c/mail con allegato modulo consenso informato`n   𝟭3 → Utente ACCETTA data e struttura letto note c/mail con allegato preparazione`n   𝟭4 → Utente ACCETTA data e struttura letto note c/mail e PagoPA`n`n♦ 𝗥𝗜𝗙𝗜𝗨𝗧𝗔`n   𝟮0 → Utente RIFIUTA con disdetta regolare 99+𝓍𝓍𝓍𝓍`n   𝟮1 → Utente RIFIUTA con disdetta regolare 99+𝓍𝓍𝓍𝓍 gia eseguito in LP`n   𝟮2 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 troppo lontano.`n   𝟮3 → Utente RIFIUTA con disdetta regolare 99+𝓍𝓍𝓍𝓍 troppo presto.`n   𝟮4 → Utente RIFIUTA con disdetta regolare 99+𝓍𝓍𝓍𝓍 per problematiche lavorative.`n   𝟮5 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 per problematiche di trasporto.`n   𝟮6 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 presente prenotazione più favorevole`n`n♣ 𝗡𝗢𝗡 𝗥𝗜𝗦𝗣𝗢𝗡𝗗𝗘`n   𝟯0 → Utente NON RISPONDE`n   𝟯1 → Utente NON RISPONDE lasciato messaggio in segreteria`n   𝟯2 → Utente NON RISPONDE non lascio altri messaggi in segreteria`n   𝟯3 → Utente NON RISPONDE senza segreteria`n   𝟯4 → Utente RISPONDE MA `n   𝟯5 → Utenza STACCATA: non parte la chiamata`n   𝟯6 → Utente NON RISPONDE e non sono presenti altri recapiti telefonici`n   𝟯7 → Utente NON RAGGIUNGIBILE: utenza spenta o non raggiungibile`n   𝟯8 → Utente ha BLOCCATO il nostro recapito cosi da rendere impossibile ogni tentativo`n`n♠ 𝗔𝗟𝗧𝗥𝗢`n   𝟰0 → Data e Ora `n   𝟰1 → NOTA DA ALTRO OPERATORE: `n   𝟰2 → Riporto recapiti da altri gestionali: `n   𝟰3 → Non presenti altri recapiti telefonici `n   𝟰4 → DISDICO PER MANCATO CONTATTO con numero `n   𝟵0  → AVVISATO,,660,690,600
+InputBox, choice, ULSS9 Scaligera - Utility FX v1.98.5, ♥ 𝗔𝗖𝗖𝗘𝗧𝗧𝗔`n   𝟭0 → Utente ACCETTA data e struttura letto note`n   𝟭1 → Utente ACCETTA data e struttura letto note c/mail`n   𝟭2 → Utente ACCETTA data e struttura letto note c/mail con allegato modulo consenso informato`n   𝟭3 → Utente ACCETTA data e struttura letto note c/mail con allegato preparazione`n   𝟭4 → Utente ACCETTA data e struttura letto note c/mail e PagoPA`n`n♦ 𝗥𝗜𝗙𝗜𝗨𝗧𝗔`n   𝟮0 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍`n   𝟮1 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍 gia eseguito in LP`n   𝟮2 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 troppo lontano.`n   𝟮3 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍 troppo presto.`n   𝟮4 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍 per problematiche lavorative.`n   𝟮5 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 per problematiche di trasporto.`n   𝟮6 → Utente RIFIUTA con disdetta regolare 𝟡𝟠+𝓍𝓍𝓍𝓍 presente prenotazione più favorevole`n`n♣ 𝗡𝗢𝗡 𝗥𝗜𝗦𝗣𝗢𝗡𝗗𝗘`n   𝟯0 → Utente NON RISPONDE`n   𝟯1 → Utente NON RISPONDE lasciato messaggio in segreteria`n   𝟯2 → Utente NON RISPONDE non lascio altri messaggi in segreteria`n   𝟯3 → Utente NON RISPONDE senza segreteria`n   𝟯4 → Utente RISPONDE MA `n   𝟯5 → Utenza STACCATA: non parte la chiamata`n   𝟯6 → Utente NON RISPONDE e non sono presenti altri recapiti telefonici`n   𝟯7 → Utente NON RAGGIUNGIBILE: utenza spenta o non raggiungibile`n   𝟯8 → Utente ha BLOCCATO il nostro recapito cosi da rendere impossibile ogni tentativo`n`n♠ 𝗔𝗟𝗧𝗥𝗢`n   𝟰0 → Data e Ora `n   𝟰1 → NOTA DA ALTRO OPERATORE: `n   𝟰2 → Riporto recapiti da altri gestionali: `n   𝟰3 → Non presenti altri recapiti telefonici `n   𝟰4 → DISDICO PER MANCATO CONTATTO con numero `n   𝟵0  → AVVISATO,,660,690,600
 if ErrorLevel
     return
 
@@ -24,43 +23,43 @@ else if (choice = "20" or choice = "2") {
     InputBox, extra, Codice Disdetta, Inserisci le ultime 4 cifre del codice
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare 99" . extra
+    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare 98" . extra
 }
 else if (choice = "21") {
     InputBox, extra, Codice Disdetta, Inserisci le ultime 4 cifre del codice
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare 99" . extra . " già eseguito in LP"
+    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare 98" . extra . " già eseguito in LP"
 }
 else if (choice = "22") {
     InputBox, extra, Codice Disdetta, Inserisci le ultime 4 cifre del codice
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare 99" . extra . " troppo lontano"
+    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare 98" . extra . " troppo lontano"
 }
 else if (choice = "23") {
     InputBox, extra, Codice Disdetta, Inserisci le ultime 4 cifre del codice
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare 99" . extra . " troppo presto"
+    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare 98" . extra . " troppo presto"
 }
 else if (choice = "24") {
     InputBox, extra, Codice Disdetta, Inserisci le ultime 4 cifre del codice
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare 99" . extra . " per problematiche lavorative"
+    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare 98" . extra . " per problematiche lavorative"
 }
 else if (choice = "25") {
     InputBox, extra, Codice Disdetta, Inserisci le ultime 4 cifre del codice
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare 99" . extra . " per problematiche di trasporto"
+    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare 98" . extra . " per problematiche di trasporto"
 }
 else if (choice = "26") {
     InputBox, extra, Codice Disdetta, Inserisci le ultime 4 cifre del codice
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare 99" . extra . " presente prenotazione più favorevole"
+    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare 98" . extra . " presente prenotazione più favorevole"
 }
 
 
@@ -103,7 +102,7 @@ else if (choice = "44") {
     InputBox, extra, Codice Disdetta, Inserisci le ultime 4 cifre del codice
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h DISDICO PER MANCATO CONTATTO con numero 99" . extra
+    formatted := "Ale " . date . "h DISDICO PER MANCATO CONTATTO con numero 98" . extra
 }
 
 	else if (choice = "9")
@@ -116,6 +115,7 @@ else {
 ; Invia il testo simulando battitura, senza usare gli appunti
 SendInput %formatted%
 return
+
 
 F9::
 {
@@ -227,3 +227,58 @@ return
     }
 }
 return
+
+#Requires AutoHotkey v1.1+
+#NoEnv
+#SingleInstance Force
+SendMode Input
+
+global NoteContent := ""
+global guiCreated := false
+
+F3::
+{
+    ; Salva il contenuto corrente della clipboard
+    ClipSaved := ClipboardAll
+    Clipboard := ""       ; Svuota per nuova copia
+    Send ^c
+    ClipWait, 0.5
+    if (Clipboard = "")
+    {
+        MsgBox, Testo non selezionato o non copiabile.
+        Clipboard := ClipSaved
+        return
+    }
+
+    ; Aggiunge il nuovo paragrafo
+    NoteContent .= (NoteContent ? "`n`n" : "") . Clipboard
+    Clipboard := ClipSaved
+
+    if (!guiCreated) {
+        ; Crea la GUI
+        Gui, +Resize +AlwaysOnTop -MaximizeBox -MinimizeBox
+        Gui, Margin, 10, 10
+        Gui, Font, s10, Comfortaa
+        Gui, Add, Edit, vEditBox w400 h150 ReadOnly -Wrap,
+        
+        ; Calcola posizione in basso a destra
+        SysGet, Mon, MonitorWorkArea
+        x := MonRight - 520  ; larghezza + margine
+        y := MonBottom - 320 ; altezza + margine
+
+        Gui, Show, x%x% y%y%, note.tab
+        guiCreated := true
+    }
+
+    GuiControl,, EditBox, %NoteContent%
+    return
+}
+
+GuiClose:
+GuiEscape:
+{
+    guiCreated := false
+    NoteContent := ""
+    Gui, Destroy
+    return
+}
