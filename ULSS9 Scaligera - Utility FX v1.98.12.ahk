@@ -1,9 +1,17 @@
 ﻿F1::
 FormatTime, date, , dd/MM/yyyy HH:mm
 
-InputBox, choice, ULSS9 Scaligera - Outcome.tab v1.98.11, ♥ 𝗔𝗖𝗖𝗘𝗧𝗧𝗔`n   𝟭0 → Utente ACCETTA data e struttura letto note`n   𝟭1 → Utente ACCETTA data e struttura letto note c/mail`n   𝟭2 → Utente ACCETTA data e struttura letto note c/mail con allegato modulo consenso informato`n   𝟭3 → Utente ACCETTA data e struttura letto note c/mail con allegato preparazione`n   𝟭4 → Utente ACCETTA data e struttura letto note c/mail e PagoPA`n`n♦ 𝗥𝗜𝗙𝗜𝗨𝗧𝗔`n   𝟮0 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍`n   𝟮1 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍 gia eseguito in LP`n   𝟮2 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍 troppo lontano.`n   𝟮3 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍 troppo presto.`n   𝟮4 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍 per problematiche lavorative.`n   𝟮5 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍 per problematiche di trasporto.`n   𝟮6 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍 poiché in vacanza nella suddetta data.`n   𝟮7 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍 presente prenotazione più favorevole`n`n♣ 𝗡𝗢𝗡 𝗥𝗜𝗦𝗣𝗢𝗡𝗗𝗘`n   𝟯0 → Utente NON RISPONDE`n   𝟯1 → Utente NON RISPONDE lasciato messaggio in segreteria`n   𝟯2 → Utente NON RISPONDE non lascio altri messaggi in segreteria`n   𝟯3 → Utente NON RISPONDE senza segreteria`n   𝟯4 → Utente RISPONDE MA `n   𝟯5 → Utenza STACCATA: non parte la chiamata`n   𝟯6 → Utente NON RISPONDE e non sono presenti altri recapiti telefonici`n   𝟯7 → Utente NON RAGGIUNGIBILE: utenza spenta o non raggiungibile`n   𝟯8 → Utente ha BLOCCATO il nostro recapito cosi da rendere impossibile ogni tentativo`n`n♠ 𝗔𝗟𝗧𝗥𝗢`n   𝟰0 → Data e Ora `n   𝟰1 → NOTA DA ALTRO OPERATORE: `n   𝟰2 → Riporto recapiti da altri gestionali: `n   𝟰3 → Non presenti altri recapiti telefonici `n   𝟰4 → DISDICO PER MANCATO CONTATTO con numero `n   𝟵0  → AVVISATO,,660,690,600
+; Crea una finestra dummy sempre in primo piano
+Gui +AlwaysOnTop +ToolWindow +OwnDialogs
+Gui Show, w1 h1, DummyAlwaysOnTop
+Gui Hide  ; La nascondiamo subito, ma mantiene l'effetto AlwaysOnTop
+
+InputBox, choice, ULSS9 Scaligera - Outcome.tab v1.98.12, ♥ 𝗔𝗖𝗖𝗘𝗧𝗧𝗔`n   𝟭0 → Utente ACCETTA data e struttura letto note`n   𝟭1 → Utente ACCETTA data e struttura letto note c/mail`n   𝟭2 → Utente ACCETTA data e struttura letto note c/mail con allegato modulo consenso informato`n   𝟭3 → Utente ACCETTA data e struttura letto note c/mail con allegato preparazione`n   𝟭4 → Utente ACCETTA data e struttura letto note c/mail e PagoPA`n`n♦ 𝗥𝗜𝗙𝗜𝗨𝗧𝗔`n   𝟮0 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍`n   𝟮1 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍 gia eseguito in LP`n   𝟮2 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍 troppo lontano.`n   𝟮3 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍 troppo presto.`n   𝟮4 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍 per problematiche lavorative.`n   𝟮5 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍 per problematiche di trasporto.`n   𝟮6 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍 poiché in vacanza nella suddetta data.`n   𝟮7 → Utente RIFIUTA con disdetta regolare 98+𝓍𝓍𝓍𝓍 presente prenotazione più favorevole`n`n♣ 𝗡𝗢𝗡 𝗥𝗜𝗦𝗣𝗢𝗡𝗗𝗘`n   𝟯0 → Utente NON RISPONDE`n   𝟯1 → Utente NON RISPONDE lasciato messaggio in segreteria`n   𝟯2 → Utente NON RISPONDE non lascio altri messaggi in segreteria`n   𝟯3 → Utente NON RISPONDE senza segreteria`n   𝟯4 → Utente RISPONDE MA `n   𝟯5 → Utenza STACCATA: non parte la chiamata`n   𝟯6 → Utente NON RISPONDE e non sono presenti altri recapiti telefonici`n   𝟯7 → Utente NON RAGGIUNGIBILE: utenza spenta o non raggiungibile`n   𝟯8 → Utente ha BLOCCATO il nostro recapito cosi da rendere impossibile ogni tentativo`n`n♠ 𝗔𝗟𝗧𝗥𝗢`n   𝟰0 → Data e Ora `n   𝟰1 → NOTA DA ALTRO OPERATORE: `n   𝟰2 → Riporto recapiti da altri gestionali: `n   𝟰3 → Non presenti altri recapiti telefonici `n   𝟰4 → DISDICO PER MANCATO CONTATTO con numero `n   𝟵0  → AVVISATO,,660,690,600
+
+Gui Destroy ; distrugge la finestra dummy
 if ErrorLevel
     return
+
 
 choice := Trim(choice)
 formatted := ""
@@ -118,18 +126,16 @@ else {
     return
 }
 
-; Invia il testo simulando battitura, senza usare gli appunti
+
 SendInput %formatted%
 return
 
 
 F9::
 {
-    ; Salva gli appunti correnti
     ClipSaved := ClipboardAll
     Clipboard := ""
 
-    ; Copia la selezione dell'utente
     Send, ^c
     ClipWait, 1
     if (ErrorLevel) {
