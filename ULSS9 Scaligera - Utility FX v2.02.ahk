@@ -188,7 +188,7 @@ return
 
         ; Doppio clic alle coordinate 78,246
         Sleep, 150
-        MouseClick, left, 62, 242, 2
+        MouseClick, left, 104, 242, 2
 		
 		
 
