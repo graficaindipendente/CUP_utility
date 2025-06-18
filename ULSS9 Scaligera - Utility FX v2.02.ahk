@@ -1,7 +1,7 @@
 ﻿F1::
 FormatTime, date, , dd/MM/yyyy HH:mm
 
-InputBox, choice, ULSS9 Scaligera - Outcome.tab v2.01, ♥ 𝗔𝗖𝗖𝗘𝗧𝗧𝗔`n   𝟭0 → Utente ACCETTA data e struttura letto note`n   𝟭1 → Utente ACCETTA data e struttura letto note c/mail`n   𝟭2 → Utente ACCETTA data e struttura letto note c/mail con allegato modulo consenso informato`n   𝟭3 → Utente ACCETTA data e struttura letto note c/mail con allegato preparazione`n   𝟭4 → Utente ACCETTA data e struttura letto note c/mail e PagoPA`n`n♦ 𝗥𝗜𝗙𝗜𝗨𝗧𝗔`n   𝟮0 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍`n   𝟮1 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 gia eseguito in LP`n   𝟮2 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 troppo lontano.`n   𝟮3 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 troppo presto.`n   𝟮4 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche lavorative.`n   𝟮5 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche di trasporto.`n   𝟮6 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 poiché fuori sede nella suddetta data.`n   𝟮7 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 presente prenotazione più favorevole`n`n♣ 𝗡𝗢𝗡 𝗥𝗜𝗦𝗣𝗢𝗡𝗗𝗘`n   𝟯0 → Utente NON RISPONDE`n   𝟯1 → Utente NON RISPONDE lasciato messaggio in segreteria`n   𝟯2 → Utente NON RISPONDE non lascio altri messaggi in segreteria`n   𝟯3 → Utente NON RISPONDE senza segreteria`n   𝟯4 → Utente RISPONDE MA `n   𝟯5 → Utenza STACCATA: non parte la chiamata`n   𝟯6 → Utente NON RISPONDE e non sono presenti altri recapiti telefonici`n   𝟯7 → Utente NON RAGGIUNGIBILE: utenza spenta o non raggiungibile`n   𝟯8 → Utente ha BLOCCATO il nostro recapito cosi da rendere impossibile ogni tentativo`n`n♠ 𝗔𝗟𝗧𝗥𝗢`n   𝟰0 → Data e Ora `n   𝟰1 → NOTA DA ALTRO OPERATORE: `n   𝟰2 → Riporto recapiti da altri gestionali: `n   𝟰3 → Non presenti altri recapiti telefonici `n   𝟰4 → DISDICO PER MANCATO CONTATTO con numero `n   𝟵0  → AVVISATO,,660,690,600
+InputBox, choice, ULSS9 Scaligera - Outcome.tab v2.02, ♥ 𝗔𝗖𝗖𝗘𝗧𝗧𝗔`n   𝟭0 → Utente ACCETTA data e struttura letto note`n   𝟭1 → Utente ACCETTA data e struttura letto note c/mail`n   𝟭2 → Utente ACCETTA data e struttura letto note c/mail con allegato modulo consenso informato`n   𝟭3 → Utente ACCETTA data e struttura letto note c/mail con allegato preparazione`n   𝟭4 → Utente ACCETTA data e struttura letto note c/mail e PagoPA`n`n♦ 𝗥𝗜𝗙𝗜𝗨𝗧𝗔`n   𝟮0 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍`n   𝟮1 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 gia eseguito in LP`n   𝟮2 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 troppo lontano.`n   𝟮3 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 troppo presto.`n   𝟮4 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche lavorative.`n   𝟮5 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche di trasporto.`n   𝟮6 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 poiché fuori sede nella suddetta data.`n   𝟮7 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 presente prenotazione più favorevole`n`n♣ 𝗡𝗢𝗡 𝗥𝗜𝗦𝗣𝗢𝗡𝗗𝗘`n   𝟯0 → Utente NON RISPONDE`n   𝟯1 → Utente NON RISPONDE lasciato messaggio in segreteria`n   𝟯2 → Utente NON RISPONDE non lascio altri messaggi in segreteria`n   𝟯3 → Utente NON RISPONDE senza segreteria`n   𝟯4 → Utente RISPONDE MA `n   𝟯5 → Utenza STACCATA: non parte la chiamata`n   𝟯6 → Utente NON RISPONDE e non sono presenti altri recapiti telefonici`n   𝟯7 → Utente NON RAGGIUNGIBILE: utenza spenta o non raggiungibile`n   𝟯8 → Utente ha BLOCCATO il nostro recapito cosi da rendere impossibile ogni tentativo`n`n♠ 𝗔𝗟𝗧𝗥𝗢`n   𝟰0 → Data e Ora `n   𝟰1 → NOTA DA ALTRO OPERATORE: `n   𝟰2 → Riporto recapiti da altri gestionali: `n   𝟰3 → Non presenti altri recapiti telefonici `n   𝟰4 → DISDICO PER MANCATO CONTATTO con numero `n   𝟵0  → AVVISATO,,660,690,600
 if ErrorLevel
     return
 
@@ -121,15 +121,12 @@ else {
 ; Invia il testo simulando battitura, senza usare gli appunti
 SendInput %formatted%
 return
-
-
+;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 F9::
 {
-    ; Salva gli appunti correnti
     ClipSaved := ClipboardAll
     Clipboard := ""
 
-    ; Copia la selezione dell'utente
     Send, ^c
     ClipWait, 1
     if (ErrorLevel) {
@@ -139,9 +136,8 @@ F9::
     }
 
     phone := Clipboard
-    phone := StrReplace(phone, " ", "")  ; Rimuove gli spazi
+    phone := StrReplace(phone, " ", "") 
 
-    ; Attiva la finestra Chrome
     WinActivate, Intelligenza artificiale applicata - Innlab AI - Google Chrome
     WinWaitActive, Intelligenza artificiale applicata - Innlab AI - Google Chrome, , 2
     if (ErrorLevel) {
@@ -150,34 +146,22 @@ F9::
         return
     }
 
-    Sleep, 10  ; Attendi stabilizzazione
-
-    ; Clicca sul campo di input (regola se necessario)
+    Sleep, 10 
     CoordMode, Mouse, Window
 
-    MouseClick, left, 137, 614  ; Cambia queste coordinate!
+    MouseClick, left, 72, 584
     Sleep, 10
-
-    ; Incolla il numero
     Clipboard := phone
     Send, ^v
     Sleep, 10
-
-    ; Clic finale alle coordinate richieste (1049, 434 relative alla finestra)
-    MouseClick, left, 394, 614
-
-    ; Ripristina gli appunti originali
+    MouseClick, left, 391, 584
     Sleep, 10
     Clipboard := ClipSaved
 }
 return
-
-
-
-
+;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 F10::
 {
-    ; Attiva la finestra specifica
     SetTitleMatchMode, 2
     WinActivate, Intelligenza artificiale applicata - Innlab AI - Google Chrome
     WinWaitActive, Intelligenza artificiale applicata - Innlab AI - Google Chrome
@@ -190,24 +174,7 @@ F10::
     }
 }
 return
-
-
-F12::
-{
-    ; Attiva la finestra specifica
-    SetTitleMatchMode, 2
-    WinActivate, Intelligenza artificiale applicata - Innlab AI - Google Chrome
-    WinWaitActive, Intelligenza artificiale applicata - Innlab AI - Google Chrome
-
-    if WinActive("Intelligenza artificiale applicata - Innlab AI - Google Chrome") {
-        ; Esegue un clic sinistro alle coordinate assolute (schermo)
-    MouseClick, left, 328, 549
-    } else {
-        MsgBox, La finestra non è attiva.
-    }
-}
-return
-
+;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  F11::
 {
     ; Attiva la finestra specifica
@@ -217,11 +184,11 @@ return
 
     if WinActive("Intelligenza artificiale applicata - Innlab AI - Google Chrome") {
         ; Esegue un clic sinistro alle coordinate assolute (schermo)
-    MouseClick, left, 403, 563
+    MouseClick, left, 390, 533
 
         ; Doppio clic alle coordinate 78,246
         Sleep, 150
-        MouseClick, left, 78, 246, 2
+        MouseClick, left, 62, 242, 2
 		
 		
 
@@ -233,9 +200,23 @@ return
     }
 }
 return
+;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+F12::
+{
+    ; Attiva la finestra specifica
+    SetTitleMatchMode, 2
+    WinActivate, Intelligenza artificiale applicata - Innlab AI - Google Chrome
+    WinWaitActive, Intelligenza artificiale applicata - Innlab AI - Google Chrome
 
-
-
+    if WinActive("Intelligenza artificiale applicata - Innlab AI - Google Chrome") {
+        ; Esegue un clic sinistro alle coordinate assolute (schermo)
+    MouseClick, left, 328, 530
+    } else {
+        MsgBox, La finestra non è attiva.
+    }
+}
+return
+;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
         ; NOTEMP.TAB
         #Requires AutoHotkey v1.1+
         #NoEnv
@@ -276,7 +257,7 @@ return
                 x := MonRight - 400
                 y := MonBottom - 250
         
-                Gui, Show, x%x% y%y%, ULSS9 Scaligera - noTemp.tab v2.01
+                Gui, Show, x%x% y%y%, ULSS9 Scaligera - noTemp.tab v2.02
                 guiCreated := true
             }
         
