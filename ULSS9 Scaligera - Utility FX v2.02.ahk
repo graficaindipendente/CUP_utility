@@ -149,12 +149,12 @@ F9::
     Sleep, 10 
     CoordMode, Mouse, Window
 
-    MouseClick, left, 72, 584
+    MouseClick, left, 115, 618
     Sleep, 10
     Clipboard := phone
     Send, ^v
     Sleep, 10
-    MouseClick, left, 391, 584
+    MouseClick, left, 388, 614
     Sleep, 10
     Clipboard := ClipSaved
 }
@@ -168,7 +168,7 @@ F10::
 
     if WinActive("Intelligenza artificiale applicata - Innlab AI - Google Chrome") {
         ; Esegue un clic sinistro alle coordinate assolute (schermo)
-    MouseClick, left, 329, 592
+    MouseClick, left, 321, 585
     } else {
         MsgBox, La finestra non è attiva.
     }
@@ -184,11 +184,11 @@ return
 
     if WinActive("Intelligenza artificiale applicata - Innlab AI - Google Chrome") {
         ; Esegue un clic sinistro alle coordinate assolute (schermo)
-    MouseClick, left, 390, 533
+    MouseClick, left, 390, 559
 
         ; Doppio clic alle coordinate 78,246
         Sleep, 150
-        MouseClick, left, 104, 242, 2
+        MouseClick, left, 97, 238, 2
 		
 		
 
@@ -210,7 +210,7 @@ F12::
 
     if WinActive("Intelligenza artificiale applicata - Innlab AI - Google Chrome") {
         ; Esegue un clic sinistro alle coordinate assolute (schermo)
-    MouseClick, left, 328, 530
+    MouseClick, left, 326, 557
     } else {
         MsgBox, La finestra non è attiva.
     }
@@ -241,21 +241,21 @@ return
             }
             Clipboard := RegExReplace(Clipboard, "m)^\s+|\s+$", "")
         
-            NoteContent .= (NoteContent ? "`n`n" : "") . Clipboard
+            NoteContent .= (NoteContent ? "`n" : "") . Clipboard
             Clipboard := ClipSaved
         
             if (!guiCreated) {
                 Gui, +Resize +AlwaysOnTop -MaximizeBox -MinimizeBox
                 Gui, Margin, 10, 10
                 Gui, Font, s10, Comfortaa
-                Gui, Add, Edit, vEditBox w350 h150
+                Gui, Add, Edit, vEditBox w320 h75
         
                 Gui, Add, Button, gSaveToDesktop x10 y+10 w150, Save
                 Gui, Add, Button, gToggleCase x+10 yp w150, A ↔ a
         
                 SysGet, Mon, MonitorWorkArea
                 x := MonRight - 400
-                y := MonBottom - 250
+                y := MonBottom - 150
         
                 Gui, Show, x%x% y%y%, ULSS9 Scaligera - noTemp.tab v2.02
                 guiCreated := true
