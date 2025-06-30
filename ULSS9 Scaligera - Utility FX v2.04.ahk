@@ -114,7 +114,7 @@ else if (choice = "44") {
 	else if (choice = "9")
     formatted := "AVVISATO"
 else {
-    MsgBox, 48, Errore 404, Codice non valido!
+
     return
 }
 
@@ -235,7 +235,6 @@ return
             ClipWait, 0.5
             if (Clipboard = "")
             {
-                MsgBox, Testo non selezionato o non copiabile.
                 Clipboard := ClipSaved
                 return
             }
@@ -274,9 +273,8 @@ return
             if (FileSafeName = "")
                 FileSafeName := "vuoto"
         
-            FilePath := A_Desktop . "\note_" . FileSafeName . ".txt"
+            FilePath := A_Desktop . "\" . FileSafeName . ".txt"
             FileAppend, %EditBox%, %FilePath%
-            MsgBox, 64, Salvato, Salvato come:`n%FilePath%
             return
         }
         
