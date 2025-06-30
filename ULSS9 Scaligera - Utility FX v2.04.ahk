@@ -274,7 +274,7 @@ return
             if (FileSafeName = "")
                 FileSafeName := "vuoto"
         
-            FilePath := A_Desktop . "\noteTemp_" . FileSafeName . ".txt"
+            FilePath := A_Desktop . "\note_" . FileSafeName . ".txt"
             FileAppend, %EditBox%, %FilePath%
             MsgBox, 64, Salvato, Salvato come:`n%FilePath%
             return
