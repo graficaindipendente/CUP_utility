@@ -1,4 +1,4 @@
-﻿F8::
+﻿!F8::
 {
     SetTitleMatchMode, 2
     WinActivate, Intelligenza artificiale applicata - Innlab AI - Google Chrome
