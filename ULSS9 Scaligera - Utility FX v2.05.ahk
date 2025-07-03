@@ -1,7 +1,8 @@
-﻿!F1::
+﻿F1::
+Browser_Search::
 FormatTime, date, , dd/MM/yyyy HH:mm
 
-InputBox, choice, ULSS9 Scaligera - Outcome.tab v2.02, ♥ 𝗔𝗖𝗖𝗘𝗧𝗧𝗔`n   𝟭0 → Utente ACCETTA data e struttura letto note`n   𝟭1 → Utente ACCETTA data e struttura letto note c/mail`n   𝟭2 → Utente ACCETTA data e struttura letto note c/mail con allegato modulo consenso informato`n   𝟭3 → Utente ACCETTA data e struttura letto note c/mail con allegato preparazione`n   𝟭4 → Utente ACCETTA data e struttura letto note c/mail e PagoPA`n`n♦ 𝗥𝗜𝗙𝗜𝗨𝗧𝗔`n   𝟮0 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍`n   𝟮1 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 gia eseguito in LP`n   𝟮2 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 troppo lontano.`n   𝟮3 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 troppo presto.`n   𝟮4 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche lavorative.`n   𝟮5 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche di trasporto.`n   𝟮6 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 poiché fuori sede nella suddetta data.`n   𝟮7 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 presente prenotazione più favorevole`n`n♣ 𝗡𝗢𝗡 𝗥𝗜𝗦𝗣𝗢𝗡𝗗𝗘`n   𝟯0 → Utente NON RISPONDE`n   𝟯1 → Utente NON RISPONDE lasciato messaggio in segreteria`n   𝟯2 → Utente NON RISPONDE non lascio altri messaggi in segreteria`n   𝟯3 → Utente NON RISPONDE senza segreteria`n   𝟯4 → Utente RISPONDE MA `n   𝟯5 → Utenza STACCATA: non parte la chiamata`n   𝟯6 → Utente NON RISPONDE e non sono presenti altri recapiti telefonici`n   𝟯7 → Utente NON RAGGIUNGIBILE: utenza spenta o non raggiungibile`n   𝟯8 → Utente ha BLOCCATO il nostro recapito cosi da rendere impossibile ogni tentativo`n`n♠ 𝗔𝗟𝗧𝗥𝗢`n   𝟰0 → Data e Ora `n   𝟰1 → NOTA DA ALTRO OPERATORE: `n   𝟰2 → Riporto recapiti da altri gestionali: `n   𝟰3 → Non presenti altri recapiti telefonici `n   𝟰4 → DISDICO PER MANCATO CONTATTO con numero `n   𝟵0  → AVVISATO,,660,690,600
+InputBox, choice, ULSS9 Scaligera - Outcome.tab v2.05, ♥ 𝗔𝗖𝗖𝗘𝗧𝗧𝗔`n   𝟭0 → Utente ACCETTA data e struttura letto note`n   𝟭1 → Utente ACCETTA data e struttura letto note c/mail`n   𝟭2 → Utente ACCETTA data e struttura letto note c/mail con allegato modulo consenso informato`n   𝟭3 → Utente ACCETTA data e struttura letto note c/mail con allegato preparazione`n   𝟭4 → Utente ACCETTA data e struttura letto note c/mail e PagoPA`n`n♦ 𝗥𝗜𝗙𝗜𝗨𝗧𝗔`n   𝟮0 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍`n   𝟮1 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 gia eseguito in LP`n   𝟮2 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 troppo lontano.`n     𝟮3 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 per eccessivo posticipo`n   𝟮4 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 troppo presto.`n   𝟮5 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche lavorative.`n   𝟮6 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche di trasporto.`n   𝟮7 → Utente RIFIUTA con disdetta regolare 𝓍𝓍𝓍𝓍𝓍𝓍 poiché fuori sede nella suddetta data.`n`n   ♣ 𝗡𝗢𝗡 𝗥𝗜𝗦𝗣𝗢𝗡𝗗𝗘`n   𝟯0 → Utente NON RISPONDE`n   𝟯1 → Utente NON RISPONDE lasciato messaggio in segreteria`n   𝟯2 → Utente NON RISPONDE non lascio altri messaggi in segreteria`n   𝟯3 → Utente NON RISPONDE senza segreteria`n   𝟯4 → Utente RISPONDE MA `n   𝟯5 → Utenza STACCATA: non parte la chiamata`n   𝟯6 → Utente NON RISPONDE e non sono presenti altri recapiti telefonici`n   𝟯7 → Utente NON RAGGIUNGIBILE: utenza spenta o non raggiungibile`n   𝟯8 → Utente ha BLOCCATO il nostro recapito cosi da rendere impossibile ogni tentativo`n`n♠ 𝗔𝗟𝗧𝗥𝗢`n   𝟰0 → Data e Ora `n   𝟰1 → NOTA DA ALTRO OPERATORE: `n   𝟰2 → Riporto recapiti da altri gestionali: `n   𝟰3 → Non presenti altri recapiti telefonici `n   𝟰4 → DISDICO PER MANCATO CONTATTO con numero `n   𝟵0  → AVVISATO,,660,690,600
 if ErrorLevel
     return
 
@@ -10,8 +11,23 @@ formatted := ""
 
 if (choice = "10" or choice = "1")
     formatted := "Ale " . date . "h Utente ACCETTA data e struttura, letto note"
+
+else if (choice = "100") {
+    InputBox, extra, Utente, Inserisci chi ha risposto al telefono
+    if ErrorLevel
+        return
+    formatted := "Ale " . date . "h " . extra . " del paziente ACCETTA data e struttura, letto note"
+}
+
 else if (choice = "11")
     formatted := "Ale " . date . "h Utente ACCETTA data e struttura, letto note c/mail"
+else if (choice = "111") {
+    InputBox, extra, Utente, Inserisci chi ha risposto al telefono
+    if ErrorLevel
+        return
+    formatted := "Ale " . date . "h " . extra . " del paziente ACCETTA data e struttura, letto note c/mail"
+}
+
 else if (choice = "12")
     formatted := "Ale " . date . "h Utente ACCETTA data e struttura, letto note c/mail con allegato modulo consenso informato"
 else if (choice = "13")
@@ -41,32 +57,33 @@ else if (choice = "23") {
     InputBox, extra, Codice Disdetta, Inserisci il numero della disdetta
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare " . extra . " troppo presto"
+    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare " . extra . " per eccessivo posticipo"
 }
 else if (choice = "24") {
     InputBox, extra, Codice Disdetta, Inserisci il numero della disdetta
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare " . extra . " per problematiche lavorative"
+    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare " . extra . " troppo presto"
 }
 else if (choice = "25") {
     InputBox, extra, Codice Disdetta, Inserisci il numero della disdetta
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare " . extra . " per problematiche di trasporto"
+    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare " . extra . " per problematiche lavorative"
 }
 else if (choice = "26") {
     InputBox, extra, Codice Disdetta, Inserisci il numero della disdetta
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare " . extra . " poiché fuori sede nella suddetta data"
+    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare " . extra . " per problematiche di trasporto"
 }
 else if (choice = "27") {
     InputBox, extra, Codice Disdetta, Inserisci il numero della disdetta
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare " . extra . " presente prenotazione più favorevole"
+    formatted := "Ale " . date . "h Utente RIFIUTA con disdetta regolare " . extra . " poiché fuori sede nella suddetta data"
 }
+
 
 
 
@@ -122,7 +139,8 @@ else {
 SendInput %formatted%
 return
 ;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-!F9::
+F9::
+Media_Play_Pause::
 {
     ClipSaved := ClipboardAll
     Clipboard := ""
@@ -160,7 +178,7 @@ return
 }
 return
 ;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-!F10::
+Media_Stop::
 {
     SetTitleMatchMode, 2
     WinActivate, Intelligenza artificiale applicata - Innlab AI - Google Chrome
@@ -175,7 +193,7 @@ return
 }
 return
 ;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- !F11::
+Browser_Home::
 {
     ; Attiva la finestra specifica
     SetTitleMatchMode, 2
@@ -201,7 +219,7 @@ return
 }
 return
 ;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-!F12::
+Browser_Favorites::
 {
     ; Attiva la finestra specifica
     SetTitleMatchMode, 2
@@ -227,7 +245,7 @@ return
         global guiCreated := false
         global caseLower := true
         
-       !F3::
+        Launch_App1::
         {
             ClipSaved := ClipboardAll
             Clipboard := ""
@@ -256,7 +274,7 @@ return
                 x := MonRight - 400
                 y := MonBottom - 150
         
-                Gui, Show, x%x% y%y%, ULSS9 Scaligera - noTemp.tab v2.02
+                Gui, Show, x%x% y%y%, ULSS9 Scaligera - noTemp.tab v2.05
                 guiCreated := true
             }
         
@@ -300,7 +318,7 @@ return
             return
         }
         
-        ^F3::  ; Alt + F3 per chiudere la finestra
+        Launch_App2::  
         {
             if (guiCreated) {
                 guiCreated := false
@@ -310,7 +328,7 @@ return
             return
         }
         
-        !F8::
+        Launch_Mail::
         {
             SetTitleMatchMode, 2
             WinActivate, Intelligenza artificiale applicata - Innlab AI - Google Chrome
