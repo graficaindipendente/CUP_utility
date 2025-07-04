@@ -220,7 +220,7 @@ F12::
 return
 
 ;■■■■ HOLD on PRELIEVI ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-F8::
+Pause::
 {
     SetTitleMatchMode, 2
     WinActivate, Intelligenza artificiale applicata - Innlab AI - Google Chrome
