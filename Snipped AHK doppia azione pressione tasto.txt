@@ -1,0 +1,35 @@
+F3::
+{
+    startTime := A_TickCount   ; Registra il momento in cui il tasto è stato premuto
+
+    KeyWait, F3                 ; Aspetta che il tasto venga rilasciato
+
+    elapsed := A_TickCount - startTime  ; Calcola il tempo trascorso
+
+    if (elapsed < 1000) {
+
+
+
+
+
+
+
+
+
+
+
+    } else {
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
+return
