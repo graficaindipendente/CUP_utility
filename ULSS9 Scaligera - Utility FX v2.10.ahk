@@ -9,15 +9,15 @@ choice := Trim(choice)
 formatted := ""
 
 if (choice = "10" or choice = "1")
-    formatted := "Ale " . date . "h Utente ACCETTA data e struttura, letto note"
+    formatted := "Ale " . date . "h ACCETTA data e struttura, letto note"
 else if (choice = "11")
-    formatted := "Ale " . date . "h Utente ACCETTA data e struttura, letto note c/mail"
+    formatted := "Ale " . date . "h ACCETTA data e struttura, letto note c/mail"
 else if (choice = "12")
-    formatted := "Ale " . date . "h Utente ACCETTA data e struttura, letto note c/mail con allegato modulo consenso informato"
+    formatted := "Ale " . date . "h ACCETTA data e struttura, letto note c/mail con allegato modulo consenso informato"
 else if (choice = "13")
-    formatted := "Ale " . date . "h Utente ACCETTA data e struttura, letto note c/mail con allegato preparazione"
+    formatted := "Ale " . date . "h ACCETTA data e struttura, letto note c/mail con allegato preparazione"
 else if (choice = "14")
-    formatted := "Ale " . date . "h Utente ACCETTA data e struttura, letto note c/mail e PagoPA"
+    formatted := "Ale " . date . "h ACCETTA data e struttura, letto note c/mail e PagoPA"
 
 else if (choice = "20" or choice = "2") {
     InputBox, extra, Codice Disdetta, Inserisci il numero della disdetta
@@ -72,29 +72,29 @@ else if (choice = "27") {
 
 
 else if (choice = "30" or choice = "3")
-    formatted := "Ale " . date . "h Utente NON RISPONDE"
+    formatted := "Ale " . date . "h NON RISPONDE"
 else if (choice = "31")
-    formatted := "Ale " . date . "h Utente NON RISPONDE: lasciato messaggio in segreteria"
+    formatted := "Ale " . date . "h NON RISPONDE: lasciato messaggio in segreteria"
 else if (choice = "32")
-    formatted := "Ale " . date . "h Utente NON RISPONDE: non lascio altri messaggi in segreteria"
+    formatted := "Ale " . date . "h NON RISPONDE: non lascio altri messaggi in segreteria"
 else if (choice = "33")
-    formatted := "Ale " . date . "h Utente NON RISPONDE: senza segreteria"
+    formatted := "Ale " . date . "h NON RISPONDE: senza segreteria"
 else if (choice = "34") {
     InputBox, extra, Motivo, Inserisci il motivo
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h Utente RISPONDE MA " . extra
+    formatted := "Ale " . date . "h RISPONDE MA " . extra
 }
 else if (choice = "35")
-    formatted := "Ale " . date . "h Utenza STACCATA: non parte la chiamata"
+    formatted := "Ale " . date . "h STACCATA: non parte la chiamata"
 else if (choice = "36")
-    formatted := "Ale " . date . "h Utente NON RISPONDE e non sono presenti altri recapiti telefonici"
+    formatted := "Ale " . date . "h NON RISPONDE e non sono presenti altri recapiti telefonici"
 else if (choice = "37")
-    formatted := "Ale " . date . "h Utente NON RAGGIUNGIBILE: utenza spenta o non raggiungibile"
+    formatted := "Ale " . date . "h NON RAGGIUNGIBILE: utenza spenta o non raggiungibile"
 else if (choice = "38")
-    formatted := "Ale " . date . "h Utente ha BLOCCATO il nostro recapito così da rendere impossibile ogni tentativo"
+    formatted := "Ale " . date . "h ha BLOCCATO il nostro recapito così da rendere impossibile ogni tentativo"
 else if (choice = "39")
-    formatted := "Ale " . date . "h Utente NON RISPONDE"
+    formatted := "Ale " . date . "h NON RISPONDE"
 	else if (choice = "4")
     formatted := date . "h "
 else if (choice = "40")
