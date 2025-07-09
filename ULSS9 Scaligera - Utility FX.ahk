@@ -1,7 +1,7 @@
 ﻿F1::
 FormatTime, date, , dd/MM/yyyy HH:mm
 
-InputBox, choice, ULSS9 Scaligera - Outcome.tab, 🟢 𝗔𝗖𝗖𝗘𝗧𝗧𝗔`n   10 → ACCETTA data e struttura letto note`n   11 → ACCETTA data e struttura letto note c/mail`n   12 → ACCETTA data e struttura letto note c/mail con allegato modulo consenso informato`n   13 → ACCETTA data e struttura letto note c/mail con allegato preparazione`n   14 → ACCETTA data e struttura letto note c/mail e PagoPA`n`n🔴 𝗥𝗜𝗙𝗜𝗨𝗧𝗔`n   20 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍`n   21 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 gia eseguito in LP`n   22 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 troppo lontano`n   23 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 per eccessivo posticipo`n   24 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 troppo presto.`n   25 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche lavorative.`n   26 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche di trasporto.`n   27 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 poiché fuori sede nella suddetta data.`n   28 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 non più necessaria.`n`n🟡 𝗡𝗢𝗡 𝗥𝗜𝗦𝗣𝗢𝗡𝗗𝗘`n   30 → NON RISPONDE`n   31 → NON RISPONDE lasciato messaggio in segreteria`n   32 → NON RISPONDE non lascio altri messaggi in segreteria`n   33 → NON RISPONDE senza segreteria`n   34 → RISPONDE MA `n   35 → Utenza STACCATA: non parte la chiamata`n   36 → NON RISPONDE e non sono presenti altri recapiti telefonici`n   37 → NON RAGGIUNGIBILE: utenza spenta o non raggiungibile`n   38 → Utente ha BLOCCATO il nostro recapito cosi da rendere impossibile ogni tentativo`n`n🟣 𝗔𝗟𝗧𝗥𝗢`n   40 → CONTATTO avuto con `n   41 → NOTA DA ALTRO OPERATORE: `n   42 → Riporto recapiti da altri gestionali: `n   43 → Non presenti altri recapiti telefonici `n   44 → DISDICO PER MANCATO CONTATTO con numero `n`n   0   → Ale `n   00 → Firma su mail`n   9   → Data e Ora`n`n`n    ,,660,780,600
+InputBox, choice, ULSS9 Scaligera - Outcome.tab, 🟢 𝗔𝗖𝗖𝗘𝗧𝗧𝗔`n   10 → ACCETTA data e struttura letto note`n   11 → ACCETTA data e struttura letto note c/mail`n   12 → ACCETTA data e struttura letto note c/mail con allegato modulo consenso informato`n   13 → ACCETTA data e struttura letto note c/mail con allegato preparazione`n   14 → ACCETTA data e struttura letto note c/mail e PagoPA`n`n🔴 𝗥𝗜𝗙𝗜𝗨𝗧𝗔`n   20 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍`n   21 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 gia eseguito in LP`n   22 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 troppo lontano`n   23 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 per eccessivo posticipo`n   24 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 troppo presto.`n   25 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche lavorative.`n   26 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche di trasporto.`n   27 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 poiché fuori sede nella suddetta data.`n   28 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 non più necessaria.`n`n🟡 𝗡𝗢𝗡 𝗥𝗜𝗦𝗣𝗢𝗡𝗗𝗘`n   30 → NON RISPONDE`n   31 → NON RISPONDE lasciato messaggio in segreteria`n   32 → NON RISPONDE non lascio altri messaggi in segreteria`n   33 → NON RISPONDE senza segreteria`n   34 → RISPONDE MA `n   35 → Utenza STACCATA: non parte la chiamata`n   36 → NON RISPONDE e non sono presenti altri recapiti telefonici`n   37 → NON RAGGIUNGIBILE: utenza spenta o non raggiungibile`n   38 → Utente ha BLOCCATO il nostro recapito cosi da rendere impossibile ogni tentativo`n`n🟣 𝗔𝗟𝗧𝗥𝗢`n   40 → Data e Ora `n   41 → NOTA DA ALTRO OPERATORE: `n   42 → Riporto recapiti da altri gestionali: `n   43 → Non presenti altri recapiti telefonici `n   44 → DISDICO PER MANCATO CONTATTO con numero `n`n   0   → Ale `n   00 → Firma su mail`n   9   → CONTATTO`n`n`n    ,,660,780,600
 if ErrorLevel
     return
 
@@ -100,17 +100,16 @@ else if (choice = "38")
     formatted := date . "h Sembra che l'utente abbia BLOCCATO il nostro recapito così da rendere impossibile ogni tentativo di contatto"
 else if (choice = "39")
     formatted := date . "h NON RISPONDE"
-else if (choice = "4") {
-    InputBox, extra, Utente, Inserisci la persona di riferimento che ha risposto
-    if ErrorLevel
-        return
-    formatted := " → Contatto: " . extra
-}else if (choice = "40") {
+else if (choice = "9") {
     InputBox, extra, Utente, Inserisci la persona di riferimento che ha risposto
     if ErrorLevel
         return
     formatted := " → Contatto: " . extra
 }
+else if (choice = "4")
+    formatted := date . "h "
+else if (choice = "40")
+    formatted := date . "h "
 else if (choice = "41") {
     InputBox, extra, Altro Operatore, Inserisci la nota dell'altro operatore
     if ErrorLevel
@@ -127,8 +126,7 @@ else if (choice = "44") {
         return
     formatted := date . "h DISDICO PER MANCATO CONTATTO con codice DISD_" . extra
 }
-else if (choice = "9")
-    formatted := date . "h "
+
 else if (choice = "0")
     formatted := "Ale "
 else if (choice = "00")
