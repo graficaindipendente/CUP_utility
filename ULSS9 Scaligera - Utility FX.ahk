@@ -131,6 +131,8 @@ else if (choice = "9")
     formatted := date . "h "
 else if (choice = "0")
     formatted := "Ale "
+else if (choice = "00")
+    formatted := "`n`n`nAlessandro`n(operatore CUP 238)"
 
 SendInput %formatted%
 return

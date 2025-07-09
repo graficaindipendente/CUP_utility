@@ -1,0 +1,18 @@
+Start App 1			Launch_App1			Add Note
+Browser Search		Browser_Search		x
+Start App 2			Launch_App2			Clear Note
+
+Select Media		Launch_Media		x
+Volume Down			Volume_Down			x
+Volume Up			Volume_Up			x
+Volume Mute			Volume_Mute			x
+
+Play/Pause Media		Media_Play_Pause		x
+Previous Track		Media_Prev			usr
+Next Track			Media_Next 			psw
+Stop Media			Media_Stop 			Close Call
+
+Browser Home		Browser_Home 		Answer Prelievi
+Start Mail			Launch_Mail 		Hold Prelievi
+Browser Favorites		Browser_Favorites		Close Prelievi
+
