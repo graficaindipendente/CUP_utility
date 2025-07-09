@@ -128,7 +128,9 @@ else if (choice = "44") {
     formatted := date . "h DISDICO PER MANCATO CONTATTO con codice DISD_" . extra
 }
 else if (choice = "9")
-    formatted := date
+    formatted := date . "h "
+else if (choice = "0")
+    formatted := "Ale "
 
 SendInput %formatted%
 return
