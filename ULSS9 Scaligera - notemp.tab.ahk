@@ -1,4 +1,6 @@
-﻿#Requires AutoHotkey v1.1+
+﻿;■■■■ NOTEMP.TAB ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+#Requires AutoHotkey v1.1+
 #NoEnv
 #SingleInstance Force
 SendMode Input
@@ -7,33 +9,42 @@ global NoteContent := ""
 global guiCreated := false
 global caseLower := true
 
-; Variabile per monitorare il tempo di pressione
 F3::
-    KeyWait, F3, D ; Attende che il tasto F3 venga premuto
-    StartTime := A_TickCount ; Salva il tempo in cui il tasto viene premuto
-    KeyWait, F3 ; Aspetta che il tasto venga rilasciato
-
-    ; Verifica se il tasto è stato tenuto premuto per almeno 1 secondo
-    if (A_TickCount - StartTime >= 1000) {
- 
-
-
-
-
-            if (guiCreated) {
-                guiCreated := false
-                NoteContent := ""
-                Gui, Destroy
-            }
-
-
-
-
-
-
-
+{
+    ClipSaved := ClipboardAll
+    Clipboard := ""
+    Send ^c
+    ClipWait, 0.5
+    if (Clipboard = "")
+    {
+        Clipboard := ClipSaved
+        return
     }
+    Clipboard := RegExReplace(Clipboard, "m)^\s+|\s+$", "")
+
+    NoteContent .= (NoteContent ? "`n" : "") . Clipboard
+    Clipboard := ClipSaved
+
+    if (!guiCreated) {
+        Gui, +Resize +AlwaysOnTop -MaximizeBox -MinimizeBox
+        Gui, Margin, 10, 10
+        Gui, Font, s10, Comfortaa
+        Gui, Add, Edit, vEditBox w320 h75
+
+        Gui, Add, Button, gSaveToDesktop x10 y+10 w150, Save
+        Gui, Add, Button, gToggleCase x+10 yp w150, A ↔ a
+
+        SysGet, Mon, MonitorWorkArea
+        x := MonRight - 400
+        y := MonBottom - 150
+
+        Gui, Show, x%x% y%y%, ULSS9 Scaligera - noTemp.tab
+        guiCreated := true
+    }
+
+    GuiControl,, EditBox, %NoteContent%
     return
+}
 
 SaveToDesktop:
 {
@@ -72,7 +83,7 @@ GuiEscape:
 }
 
 !F3::
-NumLock::
+NumLock::  
 {
     if (guiCreated) {
         guiCreated := false
@@ -81,3 +92,4 @@ NumLock::
     }
     return
 }
+

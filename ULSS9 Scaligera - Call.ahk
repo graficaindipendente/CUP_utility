@@ -1,15 +1,14 @@
-﻿
-F5::
+﻿;■■■ START & CLOSE CALL ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 
 F9::
+F5::
 {
-    startTime := A_TickCount   ; Registra il momento in cui il tasto è stato premuto
+    startTime := A_TickCount  
+    KeyWait, F9
+    KeyWait, F5
+    elapsed := A_TickCount - startTime  
 
-    KeyWait, F5                 ; Aspetta che il tasto venga rilasciato
+    if (elapsed < 250) {
 
-    elapsed := A_TickCount - startTime  ; Calcola il tempo trascorso
-
-    if (elapsed < 1000) {
-        ; Azione per pressione breve (meno di 1 secondo)
         ClipSaved := ClipboardAll
         Clipboard := ""
     
@@ -42,8 +41,8 @@ F9::
         MouseClick, left, 388, 614
         Sleep, 10
         Clipboard := ClipSaved
-    } else {
-        ; Azione per pressione lunga (1 secondo o più)
+} else {
+
         SetTitleMatchMode, 2
         WinActivate, Intelligenza artificiale applicata - Innlab AI - Google Chrome
         WinWaitActive, Intelligenza artificiale applicata - Innlab AI - Google Chrome
@@ -51,9 +50,51 @@ F9::
         if WinActive("Intelligenza artificiale applicata - Innlab AI - Google Chrome") {
             ; Esegue un clic sinistro alle coordinate assolute (schermo)
         MouseClick, left, 321, 585
-        } else {
         }    }
 }
 return
 
+;■■■■ ANSWER & CLOSE PRELIEVI CALL ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+F12::
+{
+    startTime := A_TickCount 
+    KeyWait, F12 
+    elapsed := A_TickCount - startTime
+    if (elapsed < 250) {
+        SetTitleMatchMode, 2
+        WinActivate, Intelligenza artificiale applicata - Innlab AI - Google Chrome
+        WinWaitActive, Intelligenza artificiale applicata - Innlab AI - Google Chrome
+            if WinActive("Intelligenza artificiale applicata - Innlab AI - Google Chrome") {
+        MouseClick, left, 390, 559
+            Sleep, 100
+            MouseClick, left, 97, 238, 2
+            Sleep, 200
+            Send, ^c
+        } 
+    } else {
+    SetTitleMatchMode, 2
+    WinActivate, Intelligenza artificiale applicata - Innlab AI - Google Chrome
+    WinWaitActive, Intelligenza artificiale applicata - Innlab AI - Google Chrome
+    if WinActive("Intelligenza artificiale applicata - Innlab AI - Google Chrome") {
+    MouseClick, left, 326, 557
+}
+}
+}
+return
+
+;■■■■ HOLD on PRELIEVI ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+Pause::
+{
+    SetTitleMatchMode, 2
+    WinActivate, Intelligenza artificiale applicata - Innlab AI - Google Chrome
+    WinWaitActive, Intelligenza artificiale applicata - Innlab AI - Google Chrome
+
+    if WinActive("Intelligenza artificiale applicata - Innlab AI - Google Chrome") {
+        ; Esegue un clic sinistro alle coordinate assolute (schermo)
+    MouseClick, left, 382, 280
+    } else {
+        MsgBox, La finestra non è attiva.
+    }
+}
+return
 
