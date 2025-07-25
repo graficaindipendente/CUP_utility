@@ -132,7 +132,7 @@ else if (choice = "0")
 else if (choice = "000")
     formatted := "`n`n`nAlessandro`n(operatore CUP 238)"
 else if (choice = "00")
-    formatted := "→ Ale in chiamata ora"
+    formatted := "→ 𝘈𝘭𝘦 𝘪𝘯 𝘤𝘩𝘪𝘢𝘮𝘢𝘵𝘢 𝘰𝘳𝘢"
 
 SendInput %formatted%
 return
