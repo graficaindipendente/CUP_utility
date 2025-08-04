@@ -74,6 +74,31 @@ else if (choice = "28") {
     formatted := "Ale " . date . "h DISDETTA regolare con codice DISD_" . extra . " poiché non più necessaria"
 }
 
+else if (choice = "200") 
+    formatted := date . "h DISDETTA regolare"
+else if (choice = "210")
+    formatted :=  date . "h DISDETTA regolare già eseguito in LP"
+
+else if (choice = "220")
+    formatted := date . "h DISDETTA regolare troppo lontano"
+
+else if (choice = "230") 
+    formatted := date . "h DISDETTA regolare per eccessivo posticipo"
+
+else if (choice = "240")
+    formatted := date . "h DISDETTA regolare troppo presto"
+
+else if (choice = "250")
+    formatted := date . "h DISDETTA regolare per problematiche lavorative"
+
+else if (choice = "260") 
+    formatted := date . "h DISDETTA regolare per problematiche di trasporto"
+
+else if (choice = "270")
+    formatted := date . "h DISDETTA regolare poiché fuori sede nella suddetta data"
+
+else if (choice = "280")
+    formatted :=  date . "h DISDETTA regolare poiché non più necessaria"
 
 
 else if (choice = "30" or choice = "3")
