@@ -28,7 +28,7 @@ F9::
 
 F8::
 {
-    Gui, PhoneStatus:New, +AlwaysOnTop +ToolWindow, NA3 Sud - Plugin Esito Contatto v0.11
+    Gui, PhoneStatus:New, +AlwaysOnTop +ToolWindow, NA3 Sud - Plugin Esito Contatto v0.12
     Gui, Add, Text,, Seleziona un'opzione:
 
     Gui, Add, Button, gConfermato w250, Confermato
@@ -38,6 +38,8 @@ F8::
     Gui, Add, Button, gOccupato w250, Occupato
     Gui, Add, Button, gRiattacca w250, Risponde e Riattacca
     Gui, Add, Button, gNonParte w250, Non parte la telefonata
+        Gui, Add, Button, gSospeso w250, APPUNTAMENTO SOSPESO
+        Gui, Add, Button, gSposta w250, Confermato - chiamerà per spostare
 
     Gui, Show,, Esito chiamata
     return
@@ -69,6 +71,12 @@ Riattacca:
 
 NonParte:
     InserisciTesto("Non parte la telefonata")
+    return
+    Sospeso:
+    InserisciTesto("APPUNTAMENTO SOSPESO")
+    return
+    Sposta:
+    InserisciTesto("Confermato - chiamerà per spostare")
     return
 
 InserisciTesto(testo) {
