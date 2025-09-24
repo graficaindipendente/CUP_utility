@@ -1,5 +1,4 @@
-﻿;■■■■ NOTEMP.TAB ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-
+﻿
 #Requires AutoHotkey v1.1+
 #NoEnv
 #SingleInstance Force
@@ -31,8 +30,9 @@ F3::
         Gui, Font, s10, Comfortaa
         Gui, Add, Edit, vEditBox w320 h75
 
-        Gui, Add, Button, gSaveToDesktop x10 y+10 w150, Save
-        Gui, Add, Button, gToggleCase x+10 yp w150, A ↔ a
+        Gui, Add, Button, gSaveToDesktop x10 y+10 w100, save
+        Gui, Add, Button, gToggleCase x+10 yp w100, A ↔ a
+        Gui, Add, Button, gRemoveNewLines x+10 yp w100, no line break
 
         SysGet, Mon, MonitorWorkArea
         x := MonRight - 400
@@ -73,6 +73,14 @@ ToggleCase:
     return
 }
 
+RemoveNewLines:
+{
+    GuiControlGet, EditBox
+    EditBox := StrReplace(EditBox, "`n", " ")
+    GuiControl,, EditBox, %EditBox%
+    return
+}
+
 GuiClose:
 GuiEscape:
 {
@@ -92,4 +100,3 @@ NumLock::
     }
     return
 }
-
