@@ -4,6 +4,9 @@ F9::  ;
     MsgBox, [F11] procedura inserendo NRE`n`n[F12] seconda parte`n`n[Ins] errore medico base`n`n[Pause] errore diabete`n`n[F10] senza inserimento NRE`n`n[CTRL+F12] gia bloccata
 return
 
+F8::ExitApp
+NumLock::  ExitApp
+
 F11::
 Send, ^c            
 Sleep, 200
