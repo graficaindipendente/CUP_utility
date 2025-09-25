@@ -1,11 +1,16 @@
 F9::  ; 
-    WinActivate, ahk_class TscShellContainerClass
-    WinMove, ahk_class TscShellContainerClass,, 0, 0
+    ; WinActivate, ahk_class TscShellContainerClass
+    ; WinMove, ahk_class TscShellContainerClass,, 0, 0
     MsgBox, [F11] procedura inserendo NRE`n`n[F12] seconda parte`n`n[Ins] errore medico base`n`n[Pause] errore diabete`n`n[F10] senza inserimento NRE`n`n[CTRL+F12] gia bloccata
 return
 
-F8::ExitApp
-NumLock::  ExitApp
+NumLock::
+    Suspend, Toggle
+    if (A_IsSuspended)
+        TrayTip, Script sospeso, Script sospeso!, 1
+    else
+        TrayTip, Script attivo, Script attivo, 1
+return
 
 F11::
 Send, ^c            
@@ -80,7 +85,8 @@ Send, !f
 Sleep, 200
 Send, !c     
 Sleep, 600
-Send, !{Tab}
+WinActivate, ahk_class Chrome_WidgetWin_1
+WinWaitActive, ahk_class Chrome_WidgetWin_1
 return
 
 Pause::
@@ -94,7 +100,8 @@ Send, !f
 Sleep, 200
 Send, !c
 Sleep, 600
-Send, !{Tab}
+WinActivate, ahk_class Chrome_WidgetWin_1
+WinWaitActive, ahk_class Chrome_WidgetWin_1
 return
 
 ^F12::
