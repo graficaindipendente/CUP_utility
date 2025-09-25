@@ -2,7 +2,7 @@
 F9::  ; 
     ; WinActivate, ahk_class TscShellContainerClass
     ; WinMove, ahk_class TscShellContainerClass,, 0, 0
-    MsgBox, [F2] procedura di inserendo NRE`n`n`n[num0] SENZA selezionare prestazioni`n`n[num1] selezionando UNA prestazione`n`n[num2] selezionando DUE prestazioni`n`n`n[num7] con errore medico base`n`n[num8] con errore diabete`n`n[num9] se gia bloccata`n`n`n[numLock] o [F8] uscita emergenza
+    MsgBox, GUIDA`n`n[F5] apri l'applicativo`n`n[F2] procedura di inserendo NRE`n`n`n[num0] SENZA selezionare prestazioni`n`n[num1] selezionando UNA prestazione`n`n[num2] selezionando DUE prestazioni`n`n`n[num7] con errore medico base`n`n[num8] con errore diabete`n`n[num9] se gia bloccata`n`n`n[numLock] o [F8] uscita emergenza
 return
 ;►►►►►► SOSPENSIONE
 ; NumLock::
