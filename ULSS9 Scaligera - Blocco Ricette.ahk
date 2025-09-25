@@ -1,18 +1,20 @@
+;►►►►►► GUIDA
 F9::  ; 
     ; WinActivate, ahk_class TscShellContainerClass
     ; WinMove, ahk_class TscShellContainerClass,, 0, 0
-    MsgBox, [F11] procedura inserendo NRE`n`n[F12] seconda parte`n`n[Ins] errore medico base`n`n[Pause] errore diabete`n`n[F10] senza inserimento NRE`n`n[CTRL+F12] gia bloccata
+    MsgBox, [F2] procedura di inserendo NRE`n`n`n[num0] SENZA selezionare prestazioni`n`n[num1] selezionando UNA prestazione`n`n[num2] selezionando DUE prestazioni`n`n`n[num7] con errore medico base`n`n[num8] con errore diabete`n`n[num9] se gia bloccata`n`n`n[numLock] o [F8] uscita emergenza
 return
-
-NumLock::
-    Suspend, Toggle
-    if (A_IsSuspended)
-        TrayTip, Script sospeso, Script sospeso!, 1
-    else
-        TrayTip, Script attivo, Script attivo, 1
-return
-
-F11::
+;►►►►►► SOSPENSIONE
+; NumLock::
+;     Suspend, Toggle
+;     if (A_IsSuspended)
+;         TrayTip, SOSPESO, SOSPESO!, 1
+; return
+;►►►►►► USCITA EMERG
+F8::ExitApp
+NumLock::ExitApp
+;►►►►►► INIZIO
+F2::
 Send, ^c            
 Sleep, 200
 WinActivate, ahk_class TscShellContainerClass
@@ -46,7 +48,32 @@ Sleep, 200
 Send, {Enter} 
 return
 
-F12::
+
+;►►►►►► ERRORE MEDICO BASE
+Numpad7::
+Send, {Space}
+Sleep, 600
+Send, !f    
+Sleep, 200
+Send, !c     
+Sleep, 600
+return
+;►►►►►► GUIDA ERRORE DIABETE
+Numpad8::
+Send, {Space}
+Sleep, 200
+Send, !u
+Sleep, 200
+Send, !c
+Sleep, 200
+Send, !f
+Sleep, 200
+Send, !c
+Sleep, 600
+return
+
+;►►►►►► SECONDA PARTE
+Numpad0::
 Send, !c
 Sleep, 200
 Send, !f
@@ -78,19 +105,15 @@ Send, {Left}
 Sleep, 200
 return
 
-Insert::
-Send, {Space}
-Sleep, 600
-Send, !f    
+;►►►►►► SECONDA PARTE CON INSERIMENTO DI UNA PRENOTAZIONE
+Numpad1::
+Send, {Tab}
 Sleep, 200
-Send, !c     
-Sleep, 600
-WinActivate, ahk_class Chrome_WidgetWin_1
-WinWaitActive, ahk_class Chrome_WidgetWin_1
-return
-
-Pause::
-Send, {Space}
+Send, {Down}
+Sleep, 200
+Send, !c
+Sleep, 200
+Send, !f
 Sleep, 200
 Send, !u
 Sleep, 200
@@ -102,9 +125,66 @@ Send, !c
 Sleep, 600
 WinActivate, ahk_class Chrome_WidgetWin_1
 WinWaitActive, ahk_class Chrome_WidgetWin_1
+Sleep, 100
+Send, {Right}
+Sleep, 200
+Send, {Right}
+Sleep, 200
+Send, op
+Sleep, 200
+Send, {Enter} 
+Sleep, 200
+Send, {Left}
+Sleep, 200
+Send, {Left}
+Sleep, 200
+Send, {Left}
+Sleep, 200
 return
-
-^F12::
+;►►►►►► SECONDA PARTE CON INSERIMENTO DI DUE PRENOTAZIONI
+Numpad2::
+Send, {Tab}
+Sleep, 200
+Send, {Down}
+Sleep, 200
+Send, {Tab}
+Sleep, 200
+Send, {Tab}
+Sleep, 200
+Send, {Down}
+Sleep, 200
+Send, !c
+Sleep, 200
+Send, !f
+Sleep, 200
+Send, !u
+Sleep, 200
+Send, !c
+Sleep, 200
+Send, !f
+Sleep, 200
+Send, !c
+Sleep, 600
+WinActivate, ahk_class Chrome_WidgetWin_1
+WinWaitActive, ahk_class Chrome_WidgetWin_1
+Sleep, 100
+Send, {Right}
+Sleep, 200
+Send, {Right}
+Sleep, 200
+Send, op
+Sleep, 200
+Send, {Enter} 
+Sleep, 200
+Send, {Left}
+Sleep, 200
+Send, {Left}
+Sleep, 200
+Send, {Left}
+Sleep, 200
+return
+;►►►►►► SE RICETTA GIA' BLOCCATA
+Numpad9::
 Send, {Space}
 Sleep, 200
 Send, !u
@@ -138,28 +218,3 @@ Send, {Left}
 Sleep, 200
 Send, {Left}
 return
-
-F10::
-Send, ^c            
-Sleep, 200
-WinActivate, ahk_class TscShellContainerClass
-WinWaitActive, ahk_class TscShellContainerClass
-Sleep, 200
-Send, ^v            
-Sleep, 200
-Send, {Enter}       
-Sleep, 600
-Send, {Space}       
-Sleep, 200
-WinActivate, ahk_class Chrome_WidgetWin_1
-WinWaitActive, ahk_class Chrome_WidgetWin_1 
-Sleep, 200
-Send, {Right}
-Sleep, 200
-Send, ^c
-Sleep, 600
-WinActivate, ahk_class TscShellContainerClass
-WinWaitActive, ahk_class TscShellContainerClass 
-return
-
-
