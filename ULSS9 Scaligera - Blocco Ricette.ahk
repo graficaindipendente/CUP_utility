@@ -74,10 +74,11 @@ return
 
 
 
-F9::
+F10::
 Send, ^c            
 Sleep, 200
-Send, !{Tab}        
+WinActivate, ahk_pid 14096
+WinWaitActive, ahk_pid 14096    
 Sleep, 200
 Send, ^v            
 Sleep, 200
@@ -85,11 +86,17 @@ Send, {Enter}
 Sleep, 600
 Send, {Space}       
 Sleep, 200
-Send, !{Tab}  
+WinActivate, ahk_pid 17540
+WinWaitActive, ahk_pid 17540 
 Sleep, 200
 Send, {Right}
 Sleep, 200
 Send, ^c
 Sleep, 600
-Send, !{Tab}
+WinActivate, ahk_pid 14096
+WinWaitActive, ahk_pid 14096    
+return
+
+F9::  ; ^ = Ctrl
+    MsgBox, [F10] per procedura fino a NRE`n`n[F11] procedura dopo NRE`n`n[F12] terminare`n`n[Ins] errore medico base`n`n[Pause] errore diabete`n
 return
