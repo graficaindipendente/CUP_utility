@@ -145,8 +145,6 @@ return
 Numpad2::
 Send, {Tab}
 Sleep, 200
-Send, {Down}
-Sleep, 200
 Send, {Tab}
 Sleep, 200
 Send, {Tab}
