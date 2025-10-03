@@ -2,7 +2,7 @@
 F9::  ; 
     ; WinActivate, ahk_class TscShellContainerClass
     ; WinMove, ahk_class TscShellContainerClass,, 0, 0
-    MsgBox, GUIDA`n`n[F5] apri l'applicativo`n`n[F2] procedura di inserendo NRE`n`n`n[num0] SENZA selezionare prestazioni`n`n[num1] selezionando UNA prestazione`n`n[num2] selezionando DUE prestazioni`n`n`n[num7] errore medico base`n`n[num8] errore telefono`n`n[num9] gia bloccata`n`n`n[numLock] o [F8] uscita emergenza
+    MsgBox, GUIDA`n`n[F5] apri l'applicativo`n`n[F2] procedura di inserendo NRE`n`n`n[num0] SENZA selezionare prestazioni`n`n[num1] selezionando UNA prestazione`n`n[num2] selezionando DUE prestazioni`n`n`n[num7] errore telefono base`n`n[num8] errore ricetta gia bloccata`n`n[num9] errore medico base`n`n`n[numLock] o [F8] uscita emergenza
 return
 ;►►►►►► SOSPENSIONE
 ; NumLock::
@@ -49,42 +49,7 @@ Send, {Enter}
 return
 
 
-;►►►►►► ERRORE MEDICO BASE
-Numpad7::
-Send, {Space}
-Sleep, 600
-Send, !f    
-Sleep, 200
-Send, !c     
-Sleep, 600
-return
-;►►►►►► GUIDA ERRORE DIABETE
-Numpad8::
-Send, {Space}
-Sleep, 200
-MouseMove, 785, 430
-Click
-Sleep, 200
-Send, 0
-Sleep, 200
-MouseMove, 825, 356
-Click
-Sleep, 200
-MouseMove, 775, 680
-Click
-Sleep, 200
-WinActivate, ahk_class Chrome_WidgetWin_1
-WinWaitActive, ahk_class Chrome_WidgetWin_1
-Sleep, 200
-Send, ^c            
-Sleep, 200
-WinActivate, ahk_class TscShellContainerClass
-WinWaitActive, ahk_class TscShellContainerClass
-Sleep, 200
-Send, ^v
-Sleep, 200
-Send, {Enter} 
-return
+
 ;►►►►►► SECONDA PARTE
 Numpad0::
 Send, !c
@@ -194,8 +159,41 @@ Sleep, 200
 Send, {Left}
 Sleep, 200
 return
+
+
+
+;►►►►►► ERRORI ►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
+;►►►►►► ERRORI ►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
+
+;►►►►►► GUIDA ERRORE DIABETE
+Numpad7::
+Send, {Space}
+Sleep, 200
+MouseMove, 785, 430
+Click
+Sleep, 200
+Send, 0
+Sleep, 200
+MouseMove, 825, 356
+Click
+Sleep, 200
+MouseMove, 775, 680
+Click
+Sleep, 200
+WinActivate, ahk_class Chrome_WidgetWin_1
+WinWaitActive, ahk_class Chrome_WidgetWin_1
+Sleep, 200
+Send, ^c            
+Sleep, 200
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, ^v
+Sleep, 200
+Send, {Enter} 
+return
 ;►►►►►► SE RICETTA GIA' BLOCCATA
-Numpad9::
+Numpad8::
 Send, {Space}
 Sleep, 200
 Send, !u
@@ -229,3 +227,14 @@ Send, {Left}
 Sleep, 200
 Send, {Left}
 return
+;►►►►►► ERRORE MEDICO BASE
+Numpad9::
+Send, {Space}
+Sleep, 600
+Send, !f    
+Sleep, 200
+Send, !c     
+Sleep, 600
+return
+
+;►►►►►► FINE ERRORI ►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
