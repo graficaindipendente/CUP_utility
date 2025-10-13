@@ -172,7 +172,7 @@ Sleep, 200
 MouseMove, 785, 430
 Click
 Sleep, 200
-Send, 0
+Send, null
 Sleep, 200
 MouseMove, 825, 356
 Click
@@ -238,3 +238,67 @@ Sleep, 600
 return
 
 ;►►►►►► FINE ERRORI ►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
+
+
+F4::
+Send, !c
+Sleep, 200
+Send, !f
+Sleep, 200
+Send, !u
+Sleep, 200
+Send, !c
+Sleep, 200
+Send, !f
+Sleep, 200
+Send, !c
+Sleep, 600
+WinActivate, ahk_class Chrome_WidgetWin_1
+WinWaitActive, ahk_class Chrome_WidgetWin_1
+Sleep, 100
+Send, {Right}
+Sleep, 200
+Send, {Right}
+Sleep, 200
+Send, op
+Sleep, 200
+Send, {Enter} 
+Sleep, 200
+Send, {Left}
+Sleep, 200
+Send, {Left}
+Sleep, 200
+Send, {Left}
+Sleep, 200
+Send, ^c            
+Sleep, 1000
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass  
+Sleep, 200
+Send, ^v            
+Sleep, 200
+Send, {Enter}       
+Sleep, 600
+Send, {Space}       
+Sleep, 200
+WinActivate, ahk_class Chrome_WidgetWin_1
+WinWaitActive, ahk_class Chrome_WidgetWin_1
+Sleep, 200
+Send, {Right}
+Sleep, 200
+Send, ^c
+Sleep, 600
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, ^c
+Sleep, 200
+Send, {Enter} 
+Sleep, 600
+MouseMove, 775, 680
+Click
+Sleep, 200
+Send, ^v
+Sleep, 200
+Send, {Enter} 
+return
