@@ -383,6 +383,4 @@ NumpadSub::
 Send !{Tab}
 return
 
-\::
-Send !{Tab}
-return
+NumpadAdd::F2
