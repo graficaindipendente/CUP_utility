@@ -119,7 +119,7 @@ Sleep, 200
 Send, {Left}
 Sleep, 200
 return
-;►►►►►► SECONDA PARTE CON INSERIMENTO DI DUE PRENOTAZIONI
+;►►►►►► SECONDA PARTE CON INSERIMENTO DI DUE PRENOTAZIONI saltando la prima
 Numpad2::
 Send, {Tab}
 Sleep, 200
@@ -159,7 +159,48 @@ Sleep, 200
 Send, {Left}
 Sleep, 200
 return
-
+;►►►►►► SECONDA PARTE CON INSERIMENTO DI DUE PRENOTAZIONI complete
+Numpad3::
+Send, {Tab}
+Sleep, 200
+Send, {Down}
+Sleep, 200
+Send, {Tab}
+Sleep, 200
+Send, {Tab}
+Sleep, 200
+Send, {Down}
+Sleep, 200
+Send, !c
+Sleep, 200
+Send, !f
+Sleep, 200
+Send, !u
+Sleep, 200
+Send, !c
+Sleep, 200
+Send, !f
+Sleep, 200
+Send, !c
+Sleep, 600
+WinActivate, ahk_class Chrome_WidgetWin_1
+WinWaitActive, ahk_class Chrome_WidgetWin_1
+Sleep, 100
+Send, {Right}
+Sleep, 200
+Send, {Right}
+Sleep, 200
+Send, op
+Sleep, 200
+Send, {Enter} 
+Sleep, 200
+Send, {Left}
+Sleep, 200
+Send, {Left}
+Sleep, 200
+Send, {Left}
+Sleep, 200
+return
 
 
 ;►►►►►► ERRORI ►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
@@ -336,4 +377,12 @@ Sleep, 200
 Send, ^v
 Sleep, 200
 Send, {Enter} 
+return
+
+NumpadSub::
+Send !{Tab}
+return
+
+\::
+Send !{Tab}
 return
