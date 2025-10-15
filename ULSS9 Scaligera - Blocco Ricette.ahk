@@ -2,7 +2,7 @@
 F9::  ; 
     ; WinActivate, ahk_class TscShellContainerClass
     ; WinMove, ahk_class TscShellContainerClass,, 0, 0
-    MsgBox, GUIDA`n`n[F5] apri l'applicativo`n`n[F2] procedura di inserendo NRE`n`n`n[num0] SENZA selezionare prestazioni`n`n[num1] selezionando UNA prestazione`n`n[num2] selezionando DUE prestazioni`n`n`n[num7] errore telefono base`n`n[num8] errore ricetta gia bloccata`n`n[num9] errore medico base`n`n`n[numLock] o [F8] uscita emergenza
+    MsgBox, GUIDA`n`n[F5] apri l'applicativo`n`n[F2] procedura di inserendo NRE`n`n[F4] ciclo intero post NRE`n`n`n[num0] SENZA selezionare prestazioni`n`n[num1] selezionando UNA prestazione`n`n[num2] selezionando DUE prestazioni`n`n[num3] n/d`n`n`n[num4] errore doppia anagrafica`n`n[num5] n/d`n`n[num6] errore diabete`n`n[num7] errore telefono base`n`n[num8] errore ricetta gia bloccata`n`n[num9] errore medico base`n`n`n[numLock] o [F8] uscita emergenza
 return
 ;►►►►►► SOSPENSIONE
 ; NumLock::
@@ -164,8 +164,29 @@ return
 
 ;►►►►►► ERRORI ►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
 ;►►►►►► ERRORI ►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
-
-;►►►►►► GUIDA ERRORE DIABETE
+;►►►►►► errore doppio nominativo
+Numpad4::
+Send, !c
+Sleep, 200
+Send, {Space}       
+Sleep, 200
+Send, ^c
+Sleep, 600
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, ^c
+Sleep, 200
+Send, {Enter} 
+Sleep, 600
+MouseMove, 775, 680
+Click
+Sleep, 200
+Send, ^v
+Sleep, 200
+Send, {Enter} 
+return
+;►►►►►► errore telefono
 Numpad7::
 Send, {Space}
 Sleep, 200
