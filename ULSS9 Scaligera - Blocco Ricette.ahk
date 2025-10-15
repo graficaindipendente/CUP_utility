@@ -237,6 +237,20 @@ Send, !c
 Sleep, 600
 return
 
+;►►►►►► ERRORE DIABETE
+Numpad6::
+Send, {Space}
+Sleep, 200
+Send, !u    
+Sleep, 200
+Send, !c     
+Sleep, 200
+Send, !f   
+Sleep, 200
+Send, !c     
+Sleep, 200
+return
+
 ;►►►►►► FINE ERRORI ►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
 
 
