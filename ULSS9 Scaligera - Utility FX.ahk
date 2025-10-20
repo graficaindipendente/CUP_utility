@@ -155,8 +155,10 @@ else if (choice = "44") {
     InputBox, extra, Codice Disdetta, Inserisci il numero della disdetta
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h DISDICO PER MANCATO CONTATTO con codice DISD_" . extra
+    formatted := "Ale " . date . "h DISDETTO PER MANCATO CONTATTO con codice DISD_" . extra
 }
+else if (choice = "440")
+    formatted := "Ale " . date . "h DISDETTO PER MANCATO CONTATTO"
 
 else if (choice = "0")
     formatted := "Ale "
