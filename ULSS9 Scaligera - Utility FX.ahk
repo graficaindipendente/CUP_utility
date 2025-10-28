@@ -282,3 +282,15 @@ NumLock::
 F5::
     Run, C:\Users\CUPVR\Documents\GitHub\ULSS9_AHK\ULSS9 Scaligera - Blocco Ricette.ahk
 return
+
+
+
+; Script AHK: Pulsanti 4 e 5 del mouse per Copia e Incolla
+
+XButton1::  ; Pulsante 4 (indietro)
+Send ^c     ; Ctrl + C per copiare
+return
+
+XButton2::  ; Pulsante 5 (avanti)
+Send ^v     ; Ctrl + V per incollare
+return
