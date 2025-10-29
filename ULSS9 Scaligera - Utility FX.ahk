@@ -167,7 +167,7 @@ else if (choice = "440")
 else if (choice = "0")
     formatted := "ᴀʟᴇ"
 else if (choice = "000")
-    formatted := "`n`n`Aʟᴇꜱꜱᴀɴᴅʀᴏ`n𝗖𝗨𝗣𝟮𝟴"
+    formatted := "`n`n`nAʟᴇꜱꜱᴀɴᴅʀᴏ`n𝗖𝗨𝗣𝟮𝟴"
 else if (choice = "00")
     formatted := "ᴀʟᴇ ɪɴ ᴄʜɪᴀᴍᴀᴛᴀ ᴏʀᴀ"
 
