@@ -165,11 +165,11 @@ else if (choice = "440")
     formatted := "Ale " . date . "h DISDETTO PER MANCATO CONTATTO"
 
 else if (choice = "0")
-    formatted := "Ale "
+    formatted := "ᴀʟᴇ"
 else if (choice = "000")
-    formatted := "`n`n`nAlessandro`n(operatore CUP 238)"
+    formatted := "`n`n`Aʟᴇꜱꜱᴀɴᴅʀᴏ`n𝗖𝗨𝗣𝟮𝟴"
 else if (choice = "00")
-    formatted := "~ 𝘈𝘭𝘦 𝘪𝘯 𝘤𝘩𝘪𝘢𝘮𝘢𝘵𝘢 𝘰𝘳𝘢"
+    formatted := "ᴀʟᴇ ɪɴ ᴄʜɪᴀᴍᴀᴛᴀ ᴏʀᴀ"
 
 SendInput %formatted%
 return
