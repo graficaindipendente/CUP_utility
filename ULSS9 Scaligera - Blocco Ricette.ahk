@@ -282,14 +282,19 @@ Send, !p
 Sleep, 200
 Send, {Down}
 Sleep, 100
-Send, {Down}
-Sleep, 100
 Send, {Enter} 
 Sleep, 200
 MouseMove, 388, 271
 Click
+Sleep, 200
+MouseMove, 388, 286
+Sleep, 300
+MouseMove, 388, 271
+Click
+Sleep, 300
 MouseMove, 388, 286
 Click
+Sleep, 300
 Send, !c
 Sleep, 200
 WinActivate, ahk_class Chrome_WidgetWin_1
@@ -344,6 +349,10 @@ return
 
 ;►►►►►► PRESELEZIONE (INIZIO) ►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
 NumpadMult::
+Send, Esc
+Sleep, 200
+Send, Esc
+Sleep, 200
 Send, !p
 Sleep, 200
 Send, {Down}
@@ -352,7 +361,14 @@ Send, {Enter}
 Sleep, 200
 MouseMove, 388, 271
 Click
+Sleep, 200
+MouseMove, 388, 286
+Sleep, 300
+MouseMove, 388, 271
+Click
+Sleep, 300
 MouseMove, 388, 286
 Click
+Sleep, 300
 Send, !c
 Sleep, 200
