@@ -14,7 +14,7 @@ return
 F8::ExitApp
 NumLock::ExitApp
 ;►►►►►► INIZIO
-NumpadAdd::
+F2::
 Send, ^c            
 Sleep, 200
 WinActivate, ahk_class TscShellContainerClass
@@ -54,15 +54,11 @@ return
 Numpad0::
 Send, !c
 Sleep, 200
-MouseMove, 422, 263
-Click
-Sleep, 200
-MouseMove, 334, 345
-Click
-Sleep, 200
 Send, !f
 Sleep, 200
-Send, !a
+Send, !u
+Sleep, 200
+Send, !c
 Sleep, 200
 Send, !f
 Sleep, 200
@@ -95,15 +91,11 @@ Send, {Down}
 Sleep, 200
 Send, !c
 Sleep, 200
-MouseMove, 422, 263
-Click
-Sleep, 200
-MouseMove, 334, 345
-Click
-Sleep, 200
 Send, !f
 Sleep, 200
-Send, !a
+Send, !u
+Sleep, 200
+Send, !c
 Sleep, 200
 Send, !f
 Sleep, 200
@@ -139,15 +131,11 @@ Send, {Down}
 Sleep, 200
 Send, !c
 Sleep, 200
-MouseMove, 422, 263
-Click
-Sleep, 200
-MouseMove, 334, 345
-Click
-Sleep, 200
 Send, !f
 Sleep, 200
-Send, !a
+Send, !u
+Sleep, 200
+Send, !c
 Sleep, 200
 Send, !f
 Sleep, 200
@@ -185,15 +173,11 @@ Send, {Down}
 Sleep, 200
 Send, !c
 Sleep, 200
-MouseMove, 422, 263
-Click
-Sleep, 200
-MouseMove, 334, 345
-Click
-Sleep, 200
 Send, !f
 Sleep, 200
-Send, !a
+Send, !u
+Sleep, 200
+Send, !c
 Sleep, 200
 Send, !f
 Sleep, 200
@@ -278,19 +262,15 @@ Send, !u
 Sleep, 200
 Send, {Esc}
 Sleep, 200
-Send, !p
+Send, !r
 Sleep, 200
+Send, {Down}
+Sleep, 100
 Send, {Down}
 Sleep, 100
 Send, {Down}
 Sleep, 100
 Send, {Enter} 
-Sleep, 200
-MouseMove, 388, 271
-Click
-MouseMove, 388, 286
-Click
-Send, !c
 Sleep, 200
 WinActivate, ahk_class Chrome_WidgetWin_1
 WinWaitActive, ahk_class Chrome_WidgetWin_1
@@ -336,23 +316,71 @@ return
 ;►►►►►► FINE ERRORI ►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
 
 
+F4::
+Send, !c
+Sleep, 200
+Send, !f
+Sleep, 200
+Send, !u
+Sleep, 200
+Send, !c
+Sleep, 200
+Send, !f
+Sleep, 200
+Send, !c
+Sleep, 600
+WinActivate, ahk_class Chrome_WidgetWin_1
+WinWaitActive, ahk_class Chrome_WidgetWin_1
+Sleep, 100
+Send, {Right}
+Sleep, 200
+Send, {Right}
+Sleep, 200
+Send, op
+Sleep, 200
+Send, {Enter} 
+Sleep, 200
+Send, {Left}
+Sleep, 200
+Send, {Left}
+Sleep, 200
+Send, {Left}
+Sleep, 200
+Send, ^c            
+Sleep, 1000
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass  
+Sleep, 200
+Send, ^v            
+Sleep, 200
+Send, {Enter}       
+Sleep, 600
+Send, {Space}       
+Sleep, 200
+WinActivate, ahk_class Chrome_WidgetWin_1
+WinWaitActive, ahk_class Chrome_WidgetWin_1
+Sleep, 200
+Send, {Right}
+Sleep, 200
+Send, ^c
+Sleep, 600
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, ^c
+Sleep, 200
+Send, {Enter} 
+Sleep, 600
+MouseMove, 775, 680
+Click
+Sleep, 200
+Send, ^v
+Sleep, 200
+Send, {Enter} 
+return
+
 NumpadSub::
 Send !{Tab}
 return
 
-
-
-;►►►►►► PRESELEZIONE (INIZIO) ►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
-NumpadMult::
-Send, !p
-Sleep, 200
-Send, {Down}
-Sleep, 100
-Send, {Enter} 
-Sleep, 200
-MouseMove, 388, 271
-Click
-MouseMove, 388, 286
-Click
-Send, !c
-Sleep, 200
+NumpadAdd::F2
