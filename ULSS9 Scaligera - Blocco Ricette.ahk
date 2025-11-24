@@ -1,3 +1,16 @@
+; Mostra una finestra 100x100 in alto a destra con un'immagine
+
+; Calcolo della posizione in alto a destra
+SysGet, MonitorWidth, 0
+xPos := MonitorWidth -1100
+yPos := 50
+
+Gui, -Caption +AlwaysOnTop +ToolWindow
+
+Gui, Add, Picture, w200 h200, numPad.png
+Gui, Show, x%xPos% y%yPos% w220 h220, NumpadPreview
+return
+
 ;►►►►►► GUIDA
 F9::  ; 
     ; WinActivate, ahk_class TscShellContainerClass
@@ -127,52 +140,9 @@ Sleep, 200
 Send, {Left}
 Sleep, 200
 return
-;►►►►►► SECONDA PARTE CON INSERIMENTO DI DUE PRENOTAZIONI saltando la prima
-Numpad2::
-Send, {Tab}
-Sleep, 200
-Send, {Tab}
-Sleep, 200
-Send, {Tab}
-Sleep, 200
-Send, {Down}
-Sleep, 200
-Send, !c
-Sleep, 200
-MouseMove, 422, 263
-Click
-Sleep, 200
-MouseMove, 334, 345
-Click
-Sleep, 200
-Send, !f
-Sleep, 200
-Send, !a
-Sleep, 200
-Send, !f
-Sleep, 200
-Send, !c
-Sleep, 600
-WinActivate, ahk_class Chrome_WidgetWin_1
-WinWaitActive, ahk_class Chrome_WidgetWin_1
-Sleep, 100
-Send, {Right}
-Sleep, 200
-Send, {Right}
-Sleep, 200
-Send, op
-Sleep, 200
-Send, {Enter} 
-Sleep, 200
-Send, {Left}
-Sleep, 200
-Send, {Left}
-Sleep, 200
-Send, {Left}
-Sleep, 200
-return
+
 ;►►►►►► SECONDA PARTE CON INSERIMENTO DI DUE PRENOTAZIONI complete
-Numpad3::
+Numpad2::
 Send, {Tab}
 Sleep, 200
 Send, {Down}
@@ -242,6 +212,28 @@ Sleep, 200
 Send, ^v
 Sleep, 200
 Send, {Enter} 
+return
+
+
+
+;►►►►►► errore diabete
+Numpad6::
+Send, !i
+Sleep, 200
+MouseMove, 422, 263
+Click
+Sleep, 200
+MouseMove, 334, 345
+Click
+Sleep, 200
+Send, !f
+Sleep, 200
+Send, !a
+Sleep, 200
+Send, !f
+Sleep, 200
+Send, !c
+Sleep, 600
 return
 ;►►►►►► errore telefono
 Numpad7::
@@ -324,19 +316,7 @@ Send, !c
 Sleep, 600
 return
 
-;►►►►►► ERRORE DIABETE
-Numpad6::
-Send, {Space}
-Sleep, 200
-Send, !u    
-Sleep, 200
-Send, !c     
-Sleep, 200
-Send, !f   
-Sleep, 200
-Send, !c     
-Sleep, 200
-return
+
 
 ;►►►►►► FINE ERRORI ►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
 
@@ -372,3 +352,4 @@ Click
 Sleep, 300
 Send, !c
 Sleep, 200
+return

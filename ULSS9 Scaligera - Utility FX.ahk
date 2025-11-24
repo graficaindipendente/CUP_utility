@@ -23,7 +23,7 @@ else if (choice = "20" or choice = "2") {
     InputBox, extra, Codice Disdetta, Inserisci il numero della disdetta
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h DISDETTA regolare con codice DISD_" . extra
+    formatted := "Ale " . date . "h DISDETTA regolare con codice DISD_" . extra . " senza specificare motivo"
 }
 else if (choice = "21") {
     InputBox, extra, Codice Disdetta, Inserisci il numero della disdetta
@@ -81,7 +81,7 @@ else if (choice = "29") {
 }
 
 else if (choice = "200") 
-    formatted := "Ale " . date . "h DISDETTA regolare"
+    formatted := "Ale " . date . "h DISDETTA regolare senza specificare motivo"
 else if (choice = "210")
     formatted :=  "Ale " . date . "h RIFIUTA appuntamento poiché già eseguito in LP"
 else if (choice = "220")
