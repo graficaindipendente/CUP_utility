@@ -132,12 +132,12 @@ else if (choice = "9") {
     formatted := ". Contatto: " . extra 
 }
 else if (choice = "4")
-    formatted := date . "h "
+    formatted := "Ale " . date . "h 𝚛𝚒𝚙𝚘𝚛𝚝𝚘 𝚗𝚘𝚝𝚊: "
 else if (choice = "40")
     formatted := "Ale " . date . "h "
 
 else if (choice = "41")
-    formatted := "Ale " . date . "h ​🇳​​🇴​​🇹​​🇦​ ​🇦​​🇱​​🇹​​🇷​​🇴​ ​🇴​​🇵​​🇪​​🇷​​🇦​​🇹​​🇴​​🇷​​🇪​ → "
+    formatted := "Ale " . date . "h ​𝚗𝚘𝚝𝚊 𝚊𝚕𝚝𝚛𝚘 𝚘𝚙𝚎𝚛𝚊𝚝𝚘𝚛𝚎: "
 else if (choice = "42")
     formatted := "Riporto recapiti da altri gestionali: "
 else if (choice = "43")
@@ -151,15 +151,15 @@ else if (choice = "44") {
 else if (choice = "440")
     formatted := "Ale " . date . "h DISDETTO PER MANCATO CONTATTO"
 else if (choice = "45")
-    formatted := " → PIC CUPG APERTA PER DISDETTA"
+    formatted := " 𝚙𝚛𝚎𝚜𝚊 𝚒𝚗 𝚌𝚊𝚛𝚒𝚌𝚘 𝚒𝚗 𝙲𝚞𝚙𝙶 𝚊𝚙𝚎𝚛𝚝𝚊 𝚙𝚎𝚛 𝚍𝚒𝚜𝚍𝚎𝚝𝚝𝚊"
 
 
 else if (choice = "0")
-    formatted := "ᴀʟᴇ"
+    formatted := "𝙰𝚕𝚎"
 else if (choice = "000")
-    formatted := "`n`n`nAʟᴇꜱꜱᴀɴᴅʀᴏ`n𝓒𝓾𝓹𝟐𝟖"
+    formatted := "`n`n`n𝙰𝚕𝚎𝚜𝚜𝚊𝚗𝚍𝚛𝚘`n𝙾𝚙𝚎𝚛𝚊𝚝𝚘𝚛𝚎 𝙲𝚞𝚙 𝟸𝟹𝟾"
 else if (choice = "00")
-    formatted := "ᴀʟᴇ ɪɴ ᴄʜɪᴀᴍᴀᴛᴀ ᴏʀᴀ"
+    formatted := "𝚒𝚗 𝚐𝚎𝚜𝚝𝚒𝚘𝚗𝚎 𝙰𝚕𝚎​"
 
 SendInput %formatted%
 return
