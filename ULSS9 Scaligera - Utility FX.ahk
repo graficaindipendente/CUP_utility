@@ -1,7 +1,7 @@
 ﻿F1::
 FormatTime, date, , dd/MM/yyyy HH:mm
 
-InputBox, choice, ULSS9 Scaligera - Outcome.tab, 🟢 𝗔𝗖𝗖𝗘𝗧𝗧𝗔`n   10 → ACCETTA data e struttura letto note`n   11 → ACCETTA data e struttura letto note c/mail`n   12 → ACCETTA data e struttura letto note c/mail con allegato modulo consenso informato`n   13 → ACCETTA data e struttura letto note c/mail con allegato preparazione`n   14 → ACCETTA data e struttura letto note c/mail e PagoPA`n`n🔴 𝗥𝗜𝗙𝗜𝗨𝗧𝗔`n   20 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍`n   21 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 gia eseguito in LP`n   22 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 troppo lontano`n   23 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 serve prima`n   24 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 troppo presto.`n   25 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche lavorative.`n   26 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche di trasporto.`n   27 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 poiché fuori sede nella suddetta data.`n   28 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 non più necessaria.`n   29 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 altra visita stesso giorno`n   2𝓍0 → Villafranca`n`n🟡 𝗡𝗢𝗡 𝗥𝗜𝗦𝗣𝗢𝗡𝗗𝗘`n   30 → NON RISPONDE`n   31 → NON RISPONDE senza segreteria`n   32 → 𝘯𝘶𝘭𝘭`n   33 → NON RISPONDE segreteria`n   34 → RISPONDE MA `n   35 → Utenza STACCATA: non parte la chiamata`n   36 → 𝘯𝘶𝘭𝘭`n   37 → NON RAGGIUNGIBILE: utenza spenta o non raggiungibile`n   38 → NON CONTATTABILE: cade la linea dopo uno squillo`n   39 → Utente NON RISPONDE in entrambe le utenze`n`n🟣 𝗔𝗟𝗧𝗥𝗢`n   40 → Data e Ora `n   41 → NOTA DA ALTRO OPERATORE: `n   42 → Riporto recapiti da altri gestionali: `n   43 → Non presenti altri recapiti telefonici `n   44 → DISDETTO PER MANCATO CONTATTO con numero`n   45 → PIC CUPG APERTA PER DISDETTA `n`n   0 → Ale | 00 → Ale in chiamta | 000 → Firma su mail | 9   → CONTATTO`n`n`n    ,,660,800,600
+InputBox, choice, ULSS9 Scaligera - Outcome.tab, 🟢 𝗔𝗖𝗖𝗘𝗧𝗧𝗔`n   10 → ACCETTA data e struttura letto note`n   11 → ACCETTA data e struttura letto note c/mail`n   12 → ACCETTA data e struttura letto note c/mail con allegato modulo consenso informato`n   13 → ACCETTA data e struttura letto note c/mail con allegato preparazione`n   14 → ACCETTA data e struttura letto note c/mail e PagoPA`n   15 → ACCETTA con altro operatore`n`n🔴 𝗥𝗜𝗙𝗜𝗨𝗧𝗔`n   20 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍`n   21 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 gia eseguito in LP`n   22 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 troppo lontano`n   23 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 troppo presto`n   24 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 senza specificare.`n   25 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche lavorative.`n   26 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche di trasporto.`n   27 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 poiché fuori sede nella suddetta data.`n   28 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 non più necessaria.`n   29 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 altra visita stesso giorno`n   2𝓍0 → Villafranca`n`n🟡 𝗡𝗢𝗡 𝗥𝗜𝗦𝗣𝗢𝗡𝗗𝗘`n   30 → NON RISPONDE`n   31 → NON RISPONDE senza segreteria`n   32 → 𝘯𝘶𝘭𝘭`n   33 → NON RISPONDE segreteria`n   34 → RISPONDE MA `n   35 → Utenza STACCATA: non parte la chiamata`n   36 → 𝘯𝘶𝘭𝘭`n   37 → NON RAGGIUNGIBILE: utenza spenta o non raggiungibile`n   38 → NON CONTATTABILE: cade la linea dopo uno squillo`n   39 → Utente NON RISPONDE in tutte le utenze`n`n🟣 𝗔𝗟𝗧𝗥𝗢`n   40 → Data e Ora `n   41 → NOTA DA ALTRO OPERATORE: `n   42 → Riporto recapiti da altri gestionali: `n   43 → Non presenti altri recapiti telefonici `n   44 → DISDETTO PER MANCATO CONTATTO con numero`n   45 → PIC CUPG APERTA PER DISDETTA `n`n   0 → Ale | 00 → Ale in chiamata | 000 → Firma su mail | 9   → CONTATTO`n`n`n    ,,660,800,600
 if ErrorLevel
     return
 
@@ -18,12 +18,15 @@ else if (choice = "13")
     formatted := "Ale " . date . "h ACCETTA data e struttura, letto note, mail con allegato prestazione e preparazione"
 else if (choice = "14")
     formatted := "Ale " . date . "h ACCETTA data e struttura, letto note, mail con allegato prestazione e PagoPA"
+else if (choice = "15")
+    formatted := "Ale " . date . "h ACCETTA con altro operatore"
+
 
 else if (choice = "20" or choice = "2") {
     InputBox, extra, Codice Disdetta, Inserisci il numero della disdetta
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h DISDETTA regolare con codice DISD_" . extra . " senza specificare motivo"
+    formatted := "Ale " . date . "h DISDETTA regolare con codice DISD_" . extra . " "
 }
 else if (choice = "21") {
     InputBox, extra, Codice Disdetta, Inserisci il numero della disdetta
@@ -37,13 +40,13 @@ else if (choice = "22") {
         return
     formatted := "Ale " . date . "h DISDETTA regolare con codice DISD_" . extra . " troppo lontano"
 }
-else if (choice = "23") {
+else if (choice = "24") {
     InputBox, extra, Codice Disdetta, Inserisci il numero della disdetta
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h DISDETTA regolare con codice DISD_" . extra . " poiché serve con più immediatezza"
+    formatted := "Ale " . date . "h DISDETTA regolare con codice DISD_" . extra . " non specificato motivo"
 }
-else if (choice = "24") {
+else if (choice = "23") {
     InputBox, extra, Codice Disdetta, Inserisci il numero della disdetta
     if ErrorLevel
         return
@@ -124,7 +127,7 @@ else if (choice = "37")
 else if (choice = "38")
     formatted := "Ale " . date . "h NON CONTATTABILE: cade la linea dopo uno squillo"
 else if (choice = "39")
-    formatted := "Ale " . date . "h NON RISPONDE in entrambe le utenze"
+    formatted := "Ale " . date . "h NON RISPONDE in tutte le utenze presenti"
 else if (choice = "9") {
     InputBox, extra, Utente, Inserisci la persona di riferimento che ha risposto
     if ErrorLevel
@@ -132,12 +135,12 @@ else if (choice = "9") {
     formatted := ". Contatto: " . extra 
 }
 else if (choice = "4")
-    formatted := "Ale " . date . "h 𝚛𝚒𝚙𝚘𝚛𝚝𝚘 𝚗𝚘𝚝𝚊: "
+    formatted := "Ale " . date . "h riporto: "
 else if (choice = "40")
     formatted := "Ale " . date . "h "
 
 else if (choice = "41")
-    formatted := "Ale " . date . "h ​𝚗𝚘𝚝𝚊 𝚊𝚕𝚝𝚛𝚘 𝚘𝚙𝚎𝚛𝚊𝚝𝚘𝚛𝚎: "
+    formatted := "Ale " . date . "h riporto nota da altro operatore: "
 else if (choice = "42")
     formatted := "Riporto recapiti da altri gestionali: "
 else if (choice = "43")
@@ -155,11 +158,11 @@ else if (choice = "45")
 
 
 else if (choice = "0")
-    formatted := "𝙰𝚕𝚎"
+    formatted := "Aʟᴇ"
 else if (choice = "000")
     formatted := "`n`n`n𝙰𝚕𝚎𝚜𝚜𝚊𝚗𝚍𝚛𝚘`n𝙾𝚙𝚎𝚛𝚊𝚝𝚘𝚛𝚎 𝙲𝚞𝚙 𝟸𝟹𝟾"
 else if (choice = "00")
-    formatted := "𝚒𝚗 𝚐𝚎𝚜𝚝𝚒𝚘𝚗𝚎 𝙰𝚕𝚎​"
+    formatted := "ɪɴ ɢᴇꜱᴛɪᴏɴAʟᴇ​"
 
 SendInput %formatted%
 return
@@ -284,3 +287,33 @@ return
 XButton2::  ; Pulsante 5 (avanti)
 Send ^v     ; Ctrl + V per incollare
 return
+
+
+
+
+;■■■■ NOTE SU SGP ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+Insert::
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !a
+Sleep, 600
+MouseMove, 670, 615
+Click
+Sleep, 400
+Send, ^v
+Sleep, 200
+Send {Enter}
+Sleep, 100
+Send {Enter}
+Sleep, 100
+Send, !c
+Sleep, 200
+Send, !s
+Sleep, 200
+Send, !o
+Sleep, 600
+return
+
+
