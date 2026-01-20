@@ -294,26 +294,29 @@ return
 ;■■■■ NOTE SU SGP ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 Insert::
-WinActivate, ahk_class TscShellContainerClass
-WinWaitActive, ahk_class TscShellContainerClass
-Sleep, 200
 Send, !a
-Sleep, 600
+Sleep, 800
 MouseMove, 670, 615
 Click
-Sleep, 400
+Sleep, 800
 Send, ^v
+Sleep, 500
+Send {Enter}
 Sleep, 200
 Send {Enter}
-Sleep, 100
-Send {Enter}
-Sleep, 100
+Sleep, 200
 Send, !c
-Sleep, 200
+Sleep, 800
 Send, !s
-Sleep, 200
+Sleep, 800
 Send, !o
-Sleep, 600
+Sleep, 800
+Send {Enter}
+Sleep, 200
+Send {Enter}
+Sleep, 200
+Send {Enter}
+Sleep, 200
 return
 
 
