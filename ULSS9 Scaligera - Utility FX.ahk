@@ -91,9 +91,9 @@ else if (choice = "210")
     formatted :=  "Ale " . date . "h RIFIUTA appuntamento poiché già eseguito"
 else if (choice = "220")
     formatted := "Ale " . date . "h RIFIUTA appuntamento poiché troppo lontano"
-else if (choice = "230") 
+else if (choice = "240") 
     formatted := "Ale " . date . "h RIFIUTA appuntamento senza specificare motivo"
-else if (choice = "240")
+else if (choice = "230")
     formatted := "Ale " . date . "h RIFIUTA appuntamento poiché troppo presto"
 else if (choice = "250")
     formatted := "Ale " . date . "h RIFIUTA appuntamento per problematiche lavorative"
@@ -156,7 +156,7 @@ else if (choice = "44") {
 else if (choice = "440")
     formatted := "Ale " . date . "h DISDETTO PER MANCATO CONTATTO"
 else if (choice = "45")
-    formatted := " 𝚙𝚛𝚎𝚜𝚊 𝚒𝚗 𝚌𝚊𝚛𝚒𝚌𝚘 𝚒𝚗 𝙲𝚞𝚙𝙶 𝚊𝚙𝚎𝚛𝚝𝚊 𝚙𝚎𝚛 𝚍𝚒𝚜𝚍𝚎𝚝𝚝𝚊"
+    formatted := " ~ PIC APERTA"
 
 
 else if (choice = "0")
