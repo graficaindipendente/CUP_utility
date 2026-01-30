@@ -1,7 +1,7 @@
 ﻿F1::
 FormatTime, date, , dd/MM/yyyy HH:mm
 
-InputBox, choice, ULSS9 Scaligera - Outcome.tab, 🟢 𝗔𝗖𝗖𝗘𝗧𝗧𝗔`n   10 → ACCETTA data e struttura letto note`n   11 → ACCETTA data e struttura letto note c/mail`n   12 → ACCETTA data e struttura letto note c/mail con allegato modulo consenso informato`n   13 → ACCETTA data e struttura letto note c/mail con allegato preparazione`n   14 → ACCETTA data e struttura letto note c/mail e PagoPA`n   15 → ACCETTA con altro operatore`n`n🔴 𝗥𝗜𝗙𝗜𝗨𝗧𝗔`n   20 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍`n   21 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 gia eseguito in LP`n   22 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 troppo lontano`n   23 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 troppo presto`n   24 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 senza specificare.`n   25 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche lavorative.`n   26 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche di trasporto.`n   27 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 poiché fuori sede nella suddetta data.`n   28 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 non più necessaria.`n   29 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 altra visita stesso giorno`n   2𝓍0 → Villafranca`n`n🟡 𝗡𝗢𝗡 𝗥𝗜𝗦𝗣𝗢𝗡𝗗𝗘`n   30 → NON RISPONDE`n   31 → NON RISPONDE senza segreteria`n   32 → 𝘯𝘶𝘭𝘭`n   33 → NON RISPONDE segreteria`n   34 → RISPONDE MA `n   35 → Utenza STACCATA: non parte la chiamata`n   36 → 𝘯𝘶𝘭𝘭`n   37 → NON RAGGIUNGIBILE: utenza spenta o non raggiungibile`n   38 → NON CONTATTABILE: cade la linea dopo uno squillo`n   39 → Utente NON RISPONDE in tutte le utenze`n`n🟣 𝗔𝗟𝗧𝗥𝗢`n   40 → Data e Ora `n   41 → NOTA DA ALTRO OPERATORE: `n   42 → Riporto recapiti da altri gestionali: `n   43 → Non presenti altri recapiti telefonici `n   44 → DISDETTO PER MANCATO CONTATTO con numero`n   45 → PIC CUPG APERTA PER DISDETTA `n`n   0 → Ale | 00 → Ale in chiamata | 000 → Firma su mail | 9   → CONTATTO`n`n`n    ,,660,800,600
+InputBox, choice, ULSS9 Scaligera - Outcome.tab, 🟢 𝗔𝗖𝗖𝗘𝗧𝗧𝗔`n   10 → ACCETTA data e struttura letto note`n   11 → ACCETTA data e struttura letto note c/mail`n   12 → ACCETTA data e struttura letto note c/mail con allegato modulo consenso informato`n   13 → ACCETTA data e struttura letto note c/mail con allegato preparazione`n   14 → ACCETTA data e struttura letto note c/mail e PagoPA`n   111 → ACCETTA con altro operatore`n   110 → RIFIUTA con altro operatore`n`n🔴 𝗥𝗜𝗙𝗜𝗨𝗧𝗔`n   20 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍`n   21 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 gia eseguito in LP`n   22 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 troppo lontano`n   23 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 troppo presto`n   24 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 senza specificare.`n   25 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche lavorative.`n   26 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche di trasporto.`n   27 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 poiché fuori sede nella suddetta data.`n   28 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 non più necessaria.`n   29 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 altra visita stesso giorno`n   2𝓍0 → Senza Codice`n`n🟡 𝗡𝗢𝗡 𝗥𝗜𝗦𝗣𝗢𝗡𝗗𝗘`n   30 → NON RISPONDE`n   31 → NON RISPONDE senza segreteria`n   32 → 𝘯𝘶𝘭𝘭`n   33 → NON RISPONDE segreteria`n   34 → RISPONDE MA `n   35 → Utenza STACCATA: non parte la chiamata`n   36 → 𝘯𝘶𝘭𝘭`n   37 → NON RAGGIUNGIBILE: utenza spenta o non raggiungibile`n   38 → NON CONTATTABILE: cade la linea dopo uno squillo`n   39 → Utente NON RISPONDE in tutte le utenze`n`n🟣 𝗔𝗟𝗧𝗥𝗢`n   4 → Riporto`n   40 → Data e Ora `n   41 → NOTA DA ALTRO OPERATORE: `n   42 → Riporto recapiti da altri gestionali: `n   43 → Non presenti altri recapiti telefonici `n   44 → DISDETTO PER MANCATO CONTATTO con numero `n   440 → DISDETTO PER MANCATO CONTATTO`n   45 → PIC CUPG APERTA PER DISDETTA `n`n   0 → Ale | 00 → Ale in chiamata | 000 → Firma su mail | 9   → CONTATTO`n`n`n    ,,620,870,600
 if ErrorLevel
     return
 
@@ -18,8 +18,10 @@ else if (choice = "13")
     formatted := "Ale " . date . "h ACCETTA data e struttura, letto note, mail con allegato prestazione e preparazione"
 else if (choice = "14")
     formatted := "Ale " . date . "h ACCETTA data e struttura, letto note, mail con allegato prestazione e PagoPA"
-else if (choice = "15")
+else if (choice = "111")
     formatted := "Ale " . date . "h ACCETTA con altro operatore"
+else if (choice = "110")
+    formatted := "Ale " . date . "h RIFIUTA con altro operatore"
 
 
 else if (choice = "20" or choice = "2") {
@@ -32,7 +34,7 @@ else if (choice = "21") {
     InputBox, extra, Codice Disdetta, Inserisci il numero della disdetta
     if ErrorLevel
         return
-    formatted := "Ale " . date . "h DISDETTA regolare con codice DISD_" . extra . " già eseguito in LP"
+    formatted := "Ale " . date . "h DISDETTA regolare con codice DISD_" . extra . " già eseguito"
 }
 else if (choice = "22") {
     InputBox, extra, Codice Disdetta, Inserisci il numero della disdetta
@@ -84,13 +86,13 @@ else if (choice = "29") {
 }
 
 else if (choice = "200") 
-    formatted := "Ale " . date . "h DISDETTA regolare senza specificare motivo"
+    formatted := "Ale " . date . "h DISDETTA regolare"
 else if (choice = "210")
-    formatted :=  "Ale " . date . "h RIFIUTA appuntamento poiché già eseguito in LP"
+    formatted :=  "Ale " . date . "h RIFIUTA appuntamento poiché già eseguito"
 else if (choice = "220")
     formatted := "Ale " . date . "h RIFIUTA appuntamento poiché troppo lontano"
 else if (choice = "230") 
-    formatted := "Ale " . date . "h RIFIUTA appuntamento per eccessivo posticipo"
+    formatted := "Ale " . date . "h RIFIUTA appuntamento senza specificare motivo"
 else if (choice = "240")
     formatted := "Ale " . date . "h RIFIUTA appuntamento poiché troppo presto"
 else if (choice = "250")
@@ -109,7 +111,7 @@ else if (choice = "30" or choice = "3")
 else if (choice = "31")
     formatted := "Ale " . date . "h NON RISPONDE: senza segreteria"
 else if (choice = "32")
-    formatted := "Ale " . date . "h vuoto"
+    formatted := "Ale " . date . "h "
 else if (choice = "33")
     formatted := "Ale " . date . "h NON RISPONDE: segreteria"
 else if (choice = "34") {
@@ -121,7 +123,7 @@ else if (choice = "34") {
 else if (choice = "35")
     formatted := "Ale " . date . "h Utenza STACCATA: non parte la chiamata"
 else if (choice = "36")
-    formatted := "Ale " . date . "h vuoto"
+    formatted := "Ale " . date . "h "
 else if (choice = "37")
     formatted := "Ale " . date . "h NON RAGGIUNGIBILE: utenza spenta o non raggiungibile"
 else if (choice = "38")
@@ -144,7 +146,7 @@ else if (choice = "41")
 else if (choice = "42")
     formatted := "Riporto recapiti da altri gestionali: "
 else if (choice = "43")
-    formatted := " - NON PRESENTI ALTRI RECAPITI"
+    formatted := " ~ NON PRESENTI ALTRI RECAPITI"
 else if (choice = "44") {
     InputBox, extra, Codice Disdetta, Inserisci il numero della disdetta
     if ErrorLevel
@@ -162,7 +164,7 @@ else if (choice = "0")
 else if (choice = "000")
     formatted := "`n`n`n𝙰𝚕𝚎𝚜𝚜𝚊𝚗𝚍𝚛𝚘`n𝙾𝚙𝚎𝚛𝚊𝚝𝚘𝚛𝚎 𝙲𝚞𝚙 𝟸𝟹𝟾"
 else if (choice = "00")
-    formatted := "ɪɴ ɢᴇꜱᴛɪᴏɴAʟᴇ​"
+    formatted := "Aʟᴇ ɪɴ ᴄʜɪᴀᴍᴀᴛᴀ"
 
 SendInput %formatted%
 return
