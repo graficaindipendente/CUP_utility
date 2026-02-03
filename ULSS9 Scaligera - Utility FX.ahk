@@ -314,6 +314,7 @@ Send, !s
 Sleep, 300
 Send, !o
 Sleep, 300
+MsgBox, NOTA INSERITA in D1, 3
 return
 
 ;■■■■ NOTE SU SGP D4 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -342,4 +343,5 @@ Send { Enter }
 Sleep, 200
 Send, !o
 Sleep, 200
+MsgBox, NOTA INSERITA in D4, 3
 return
