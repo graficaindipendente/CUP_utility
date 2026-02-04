@@ -1,5 +1,4 @@
-﻿AppsKey::
-F1::
+﻿F1::
 FormatTime, date, , dd/MM/yyyy HH:mm
 
 InputBox, choice, ULSS9 Scaligera - Outcome.tab, 🟢 𝗔𝗖𝗖𝗘𝗧𝗧𝗔`n   10 → ACCETTA data e struttura letto note`n   11 → ACCETTA data e struttura letto note c/mail`n   12 → ACCETTA data e struttura letto note c/mail con allegato modulo consenso informato`n   13 → ACCETTA data e struttura letto note c/mail con allegato preparazione`n   14 → ACCETTA data e struttura letto note c/mail e PagoPA`n   01 → ACCETTA con altro operatore`n   02 → RIFIUTA con altro operatore`n`n🔴 𝗥𝗜𝗙𝗜𝗨𝗧𝗔`n   20 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍`n   21 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 gia eseguito in LP`n   22 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 troppo lontano`n   23 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 troppo presto`n   24 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 senza specificare.`n   25 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche lavorative.`n   26 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 per problematiche di trasporto.`n   27 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 poiché fuori sede nella suddetta data.`n   28 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 non più necessaria.`n   29 → DISDETTA regolare con codice DISD_𝓍𝓍𝓍𝓍𝓍𝓍 altra visita stesso giorno`n   2𝓍0 → Senza Codice`n`n🟡 𝗡𝗢𝗡 𝗥𝗜𝗦𝗣𝗢𝗡𝗗𝗘`n   30 → NON RISPONDE`n   31 → NON RISPONDE senza segreteria`n   32 → 𝘯𝘶𝘭𝘭`n   33 → NON RISPONDE segreteria`n   34 → RISPONDE MA `n   35 → Utenza STACCATA: non parte la chiamata`n   36 → 𝘯𝘶𝘭𝘭`n   37 → NON RAGGIUNGIBILE: utenza spenta o non raggiungibile`n   38 → NON CONTATTABILE: cade la linea dopo uno squillo`n   39 → Utente NON RISPONDE in tutte le utenze`n`n🟣 𝗔𝗟𝗧𝗥𝗢`n   4 → Riporto`n   40 → Data e Ora `n   41 → NOTA DA ALTRO OPERATORE: `n   42 → Riporto recapiti da altri gestionali: `n   43 → Non presenti altri recapiti telefonici `n   44 → DISDETTO PER MANCATO CONTATTO con numero `n   440 → DISDETTO PER MANCATO CONTATTO`n   222 → PIC CUPG APERTA PER DISDETTA `n`n   0 → Ale | 00 → Ale in chiamata | 000 → Firma su mail | 9   → CONTATTO`n`n`n    ,,620,870,600
@@ -314,7 +313,7 @@ Send, !s
 Sleep, 300
 Send, !o
 Sleep, 300
-MsgBox, NOTA INSERITA in D1, 3
+MsgBox, NOTA INSERITA in D1
 return
 
 ;■■■■ NOTE SU SGP D4 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -343,5 +342,40 @@ Send { Enter }
 Sleep, 200
 Send, !o
 Sleep, 200
-MsgBox, NOTA INSERITA in D4, 3
+MsgBox, NOTA INSERITA in D4
+return
+
+;■■■■ DISDETTE D4 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+AppsKey::
+FormatTime, date, , dd/MM/yyyy HH:mm
+
+InputBox, choice, ULSS9 Scaligera - Outclose.tab,  20 Non rispondo`n 21 Prestazione non Piu' necessaria`n 22 Ottenuta una prenotazione in altra sede data`n 23 Motivi di lavoro`n 24 Motivi familiari`n 25 Motivi organizzativi`n 26 Motivi di salute`n 27 Difficolta' di trasporto`n 28 Paziente ricoverato aggravato`n 29 Altro motivo,,400,290,600
+if ErrorLevel
+    return
+
+choice := Trim(choice)
+formatted := ""
+
+if (choice = "20" or choice = "2")
+    formatted := "Ale " . date . "h DISDETTA regolare: Non rispondo"
+else if (choice = "21")
+    formatted := "Ale " . date . "h DISDETTA regolare: Prestazione non Piu' necessaria"
+else if (choice = "22")
+    formatted := "Ale " . date . "h DISDETTA regolare: Ottenuta una prenotazione in altra sede/data"
+else if (choice = "23")
+    formatted := "Ale " . date . "h DISDETTA regolare: Motivi di lavoro"
+else if (choice = "24")
+    formatted := "Ale " . date . "h DISDETTA regolare: Motivi familiari"
+else if (choice = "25")
+    formatted := "Ale " . date . "h DISDETTA regolare: Motivi organizzativi"
+else if (choice = "26")
+    formatted := "Ale " . date . "h DISDETTA regolare: Motivi di salute"
+else if (choice = "27")
+    formatted := "Ale " . date . "h DISDETTA regolare: Difficolta' di trasporto"
+else if (choice = "28")
+    formatted := "Ale " . date . "h DISDETTA regolare: Paziente ricoverato/aggravato"
+else if (choice = "29")
+    formatted := "Ale " . date . "h DISDETTA regolare: Altro motivo "
+
+SendInput %formatted%
 return
