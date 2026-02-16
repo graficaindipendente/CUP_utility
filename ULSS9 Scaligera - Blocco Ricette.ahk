@@ -2,7 +2,7 @@
 
 ; Calcolo della posizione in alto a destra
 SysGet, MonitorWidth, 0
-xPos := MonitorWidth -1100
+xPos := MonitorWidth -1800
 yPos := 50
 
 Gui, -Caption +AlwaysOnTop +ToolWindow
