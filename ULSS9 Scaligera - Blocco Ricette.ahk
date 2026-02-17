@@ -11,20 +11,7 @@ Gui, Add, Picture, w200 h200, numPad.png
 Gui, Show, x%xPos% y%yPos% w220 h220, NumpadPreview
 return
 
-;►►►►►► GUIDA
-F9::  ; 
-    ; WinActivate, ahk_class TscShellContainerClass
-    ; WinMove, ahk_class TscShellContainerClass,, 0, 0
-    MsgBox, GUIDA`n`n[F5] apri l'applicativo`n`n[F2] procedura di inserendo NRE`n`n[F4] ciclo intero post NRE`n`n`n[num0] SENZA selezionare prestazioni`n`n[num1] selezionando UNA prestazione`n`n[num2] selezionando DUE prestazioni`n`n[num3] n/d`n`n`n[num4] errore doppia anagrafica`n`n[num5] n/d`n`n[num6] errore diabete`n`n[num7] errore telefono base`n`n[num8] errore ricetta gia bloccata`n`n[num9] errore medico base`n`n`n[numLock] o [F8] uscita emergenza
-return
-;►►►►►► SOSPENSIONE
-; NumLock::
-;     Suspend, Toggle
-;     if (A_IsSuspended)
-;         TrayTip, SOSPESO, SOSPESO!, 1
-; return
-;►►►►►► USCITA EMERG
-F8::ExitApp
+
 NumLock::ExitApp
 ;►►►►►► INIZIO
 NumpadAdd::
@@ -84,6 +71,33 @@ Send, {Numpad8}
 }
 }
 }
+
+Sleep,  200
+CoordMode, Pixel, Window
+PixelGetColor, Bianco, 242, 183, RGB
+if (Bianco = 0xFFFFFF)
+{
+Send, {Numpad0} 
+}
+
+Sleep, 200
+CoordMode, Pixel, Window
+PixelGetColor, C1, 441, 181, RGB
+PixelGetColor, C2, 953, 177, RGB
+if (C1 = 0xFFFF63 && C2 = 0xFFFFFF)
+{
+Send, {Numpad1} 
+}
+else
+{
+Sleep, 200
+CoordMode, Pixel, Window
+PixelGetColor, C3, 441, 181, RGB
+PixelGetColor, C4, 953, 177, RGB
+if (C3 = 0xFFFF63 && C4 = 0xFFFF63)
+{
+Send, {Numpad2} 
+}}
 return
 
 
@@ -139,6 +153,8 @@ WinActivate, ahk_class Chrome_WidgetWin_1
 WinWaitActive, ahk_class Chrome_WidgetWin_1
 Sleep, 100
 }
+Sleep, 400
+SoundBeep
 return
 
 ;►►►►►► SECONDA PARTE CON INSERIMENTO DI UNA PRENOTAZIONE
@@ -165,21 +181,6 @@ Sleep, 200
 Send, {Numpad0}
 return
 
-Numpad3::
-Send, {Tab}
-Sleep, 200
-Send, {Down}
-Sleep, 200
-Send, {Tab}
-Sleep, 200
-Send, {Tab}
-Sleep, 200
-Send, {Tab}
-Sleep, 200
-Send, {Down}
-Sleep, 200
-Send, {Numpad0}
-return
 
 
 ;►►►►►► ERRORI ►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
@@ -307,6 +308,7 @@ Sleep, 200
 Send, {Left}
 Sleep, 200
 Send, {Left}
+SoundBeep
 return
 ;►►►►►► ERRORE MEDICO BASE
 Numpad9::
@@ -318,7 +320,8 @@ Send, !c
 Sleep, 600
 WinActivate, ahk_class Chrome_WidgetWin_1
 WinWaitActive, ahk_class Chrome_WidgetWin_1
-Sleep, 100
+Sleep, 400
+SoundBeep
 return
 
 
