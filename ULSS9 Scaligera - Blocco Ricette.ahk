@@ -49,13 +49,19 @@ Sleep, 600
 WinActivate, ahk_class TscShellContainerClass
 WinWaitActive, ahk_class TscShellContainerClass
 Sleep, 200
-CoordMode, Mouse, Window
 CoordMode, Pixel, Window
-MouseMove, 856, 430, 0
-PixelGetColor, Colore, 856, 430, RGB
-if (Colore = 0xFFFFBD)
+PixelGetColor, Colore1, 856, 430, RGB
+if (Colore1 = 0xFFFFBD)
 {
 Send, {Numpad7} 
+}
+else
+{
+CoordMode, Pixel, Window
+PixelGetColor, Colore2, 221, 569, RGB
+if (Colore2 = 0x000000)
+{
+Send, {Numpad4} 
 }
 else
 {
@@ -70,17 +76,15 @@ Send, ^v
 Sleep, 200
 Send, {Enter} 
 Sleep,  6000
-CoordMode, Mouse, Window
 CoordMode, Pixel, Window
-MouseMove, 518, 350, 0
 PixelGetColor, Colore, 518, 350, RGB
 if (Colore = 0x08246B)
 {
 Send, {Numpad8} 
 }
 }
+}
 return
-
 
 
 ;►►►►►► SECONDA PARTE
@@ -123,7 +127,6 @@ WinWaitActive, ahk_class TscShellContainerClass
 Sleep, 100
 CoordMode, Mouse, Window
 CoordMode, Pixel, Window
-MouseMove, 514, 362, 0
 PixelGetColor, Colore, 514, 362, RGB
 if (Colore = 0x08246B)
 {

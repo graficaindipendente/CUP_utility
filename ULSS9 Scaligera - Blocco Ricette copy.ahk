@@ -49,6 +49,14 @@ Sleep, 600
 WinActivate, ahk_class TscShellContainerClass
 WinWaitActive, ahk_class TscShellContainerClass
 Sleep, 200
+CoordMode, Pixel, Window
+PixelGetColor, Colore, 856, 430, RGB
+if (Colore = 0xFFFFBD)
+{
+Send, {Numpad7} 
+}
+else
+{
 Send, ^c
 Sleep, 200
 Send, {Enter} 
@@ -59,7 +67,7 @@ Sleep, 200
 Send, ^v
 Sleep, 200
 Send, {Enter} 
-Sleep,  5000
+Sleep,  6000
 CoordMode, Mouse, Window
 CoordMode, Pixel, Window
 MouseMove, 518, 350, 0
@@ -67,6 +75,7 @@ PixelGetColor, Colore, 518, 350, RGB
 if (Colore = 0x08246B)
 {
 Send, {Numpad8} 
+}
 }
 return
 
@@ -106,7 +115,23 @@ Sleep, 200
 Send, {Left}
 Sleep, 200
 Send, {Left}
+Sleep, 500
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 100
+CoordMode, Pixel, Window
+PixelGetColor, Colore, 514, 362, RGB
+if (Colore = 0x08246B)
+{
+Send, {Numpad9} 
 Sleep, 200
+}
+else
+{
+WinActivate, ahk_class Chrome_WidgetWin_1
+WinWaitActive, ahk_class Chrome_WidgetWin_1
+Sleep, 100
+}
 return
 
 ;►►►►►► SECONDA PARTE CON INSERIMENTO DI UNA PRENOTAZIONE
@@ -115,39 +140,7 @@ Send, {Tab}
 Sleep, 200
 Send, {Down}
 Sleep, 200
-Send, !c
-Sleep, 200
-MouseMove, 422, 263
-Click
-Sleep, 200
-MouseMove, 334, 345
-Click
-Sleep, 200
-Send, !f
-Sleep, 200
-Send, !a
-Sleep, 200
-Send, !f
-Sleep, 200
-Send, !c
-Sleep, 600
-WinActivate, ahk_class Chrome_WidgetWin_1
-WinWaitActive, ahk_class Chrome_WidgetWin_1
-Sleep, 100
-Send, {Right}
-Sleep, 200
-Send, {Right}
-Sleep, 200
-Send, op
-Sleep, 200
-Send, {Enter} 
-Sleep, 200
-Send, {Left}
-Sleep, 200
-Send, {Left}
-Sleep, 200
-Send, {Left}
-Sleep, 200
+Send, {Numpad0}
 return
 
 ;►►►►►► SECONDA PARTE CON INSERIMENTO DI DUE PRENOTAZIONI complete
@@ -162,39 +155,23 @@ Send, {Tab}
 Sleep, 200
 Send, {Down}
 Sleep, 200
-Send, !c
+Send, {Numpad0}
+return
+
+Numpad3::
+Send, {Tab}
 Sleep, 200
-MouseMove, 422, 263
-Click
+Send, {Down}
 Sleep, 200
-MouseMove, 334, 345
-Click
+Send, {Tab}
 Sleep, 200
-Send, !f
+Send, {Tab}
 Sleep, 200
-Send, !a
+Send, {Tab}
 Sleep, 200
-Send, !f
+Send, {Down}
 Sleep, 200
-Send, !c
-Sleep, 600
-WinActivate, ahk_class Chrome_WidgetWin_1
-WinWaitActive, ahk_class Chrome_WidgetWin_1
-Sleep, 100
-Send, {Right}
-Sleep, 200
-Send, {Right}
-Sleep, 200
-Send, op
-Sleep, 200
-Send, {Enter} 
-Sleep, 200
-Send, {Left}
-Sleep, 200
-Send, {Left}
-Sleep, 200
-Send, {Left}
-Sleep, 200
+Send, {Numpad0}
 return
 
 
@@ -270,6 +247,13 @@ Sleep, 200
 Send, ^v
 Sleep, 200
 Send, {Enter} 
+Sleep,  6000
+CoordMode, Pixel, Window
+PixelGetColor, Colore, 518, 350, RGB
+if (Colore = 0x08246B)
+{
+Send, {Numpad8} 
+}
 return
 ;►►►►►► SE RICETTA GIA' BLOCCATA
 Numpad8::
@@ -323,6 +307,9 @@ Send, !f
 Sleep, 200
 Send, !c     
 Sleep, 600
+WinActivate, ahk_class Chrome_WidgetWin_1
+WinWaitActive, ahk_class Chrome_WidgetWin_1
+Sleep, 100
 return
 
 
