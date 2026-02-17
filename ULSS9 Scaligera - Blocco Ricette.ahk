@@ -102,7 +102,7 @@ Send, {Numpad8}
 Sleep,  200
 CoordMode, Pixel, Window
 PixelGetColor, Bianco, 242, 183, RGB
-PixelGetColor, C2, 953, 177, RGB
+PixelGetColor, C2, 751, 180, RGB
 if (Bianco = 0xFFFFFF && C2 = 0xFFFFFF)
 {
 Send, {Numpad0} 
@@ -111,7 +111,7 @@ Send, {Numpad0}
 Sleep, 200
 CoordMode, Pixel, Window
 PixelGetColor, C1, 441, 181, RGB
-PixelGetColor, C2, 953, 177, RGB
+PixelGetColor, C2, 751, 180, RGB
 if (C1 = 0xFFFF63 && C2 = 0xFFFFFF)
 {
 Send, {Numpad1} 
@@ -120,7 +120,7 @@ else
 {
 Sleep, 200
 CoordMode, Pixel, Window
-PixelGetColor, C4, 956, 181, RGB
+PixelGetColor, C4, 751, 180, RGB
 if (C4 = 0xFFFF63)
 {
 Send, {Numpad2} 
@@ -244,7 +244,7 @@ Send, {Numpad8}
 Sleep,  200
 CoordMode, Pixel, Window
 PixelGetColor, Bianco, 242, 183, RGB
-PixelGetColor, C2, 953, 177, RGB
+PixelGetColor, C2, 751, 180, RGB
 if (Bianco = 0xFFFFFF && C2 = 0xFFFFFF)
 {
 Send, {Numpad0} 
@@ -253,7 +253,7 @@ Send, {Numpad0}
 Sleep, 200
 CoordMode, Pixel, Window
 PixelGetColor, C1, 441, 181, RGB
-PixelGetColor, C2, 953, 177, RGB
+PixelGetColor, C2, 751, 180, RGB
 if (C1 = 0xFFFF63 && C2 = 0xFFFFFF)
 {
 Send, {Numpad1} 
@@ -262,7 +262,7 @@ else
 {
 Sleep, 200
 CoordMode, Pixel, Window
-PixelGetColor, C4, 956, 181, RGB
+PixelGetColor, C4, 751, 180, RGB
 if (C4 = 0xFFFF63)
 {
 Send, {Numpad2} 
