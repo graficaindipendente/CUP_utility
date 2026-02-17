@@ -11,10 +11,33 @@ Gui, Add, Picture, w200 h200, numPad.png
 Gui, Show, x%xPos% y%yPos% w220 h220, NumpadPreview
 return
 
-
 NumLock::ExitApp
+NumpadDiv::
+InputBox, volte, Contatore, Quante volte deve partire lo script?, , 300, 150
+if ErrorLevel
+    return
+
+Loop, %volte%
+{
+    ; === AZIONE DA RIPETERE ===
+    Sleep, 1000 
+    ToolTip, Esecuzione %A_Index% di %volte%
+Send, {NumpadAdd}   
+
+    Sleep, 1000
+}
+
+ToolTip
+MsgBox, Fatto! Script eseguito %volte% volte.
+return
+
+
+
 ;►►►►►► INIZIO
 NumpadAdd::
+Sleep, 200
+Clipboard :=
+Sleep, 200
 Send, ^c            
 Sleep, 200
 WinActivate, ahk_class TscShellContainerClass
@@ -75,7 +98,8 @@ Send, {Numpad8}
 Sleep,  200
 CoordMode, Pixel, Window
 PixelGetColor, Bianco, 242, 183, RGB
-if (Bianco = 0xFFFFFF)
+PixelGetColor, C2, 953, 177, RGB
+if (Bianco = 0xFFFFFF && C2 = 0xFFFFFF)
 {
 Send, {Numpad0} 
 }
@@ -92,9 +116,8 @@ else
 {
 Sleep, 200
 CoordMode, Pixel, Window
-PixelGetColor, C3, 441, 181, RGB
-PixelGetColor, C4, 953, 177, RGB
-if (C3 = 0xFFFF63 && C4 = 0xFFFF63)
+PixelGetColor, C4, 956, 181, RGB
+if (C4 = 0xFFFF63)
 {
 Send, {Numpad2} 
 }}
@@ -153,7 +176,7 @@ WinActivate, ahk_class Chrome_WidgetWin_1
 WinWaitActive, ahk_class Chrome_WidgetWin_1
 Sleep, 100
 }
-Sleep, 400
+Sleep, 2000
 SoundBeep
 return
 
@@ -206,6 +229,40 @@ Sleep, 200
 Send, ^v
 Sleep, 200
 Send, {Enter} 
+Sleep,  6000
+CoordMode, Pixel, Window
+PixelGetColor, Colore, 518, 350, RGB
+if (Colore = 0x08246B)
+{
+Send, {Numpad8} 
+}
+
+Sleep,  200
+CoordMode, Pixel, Window
+PixelGetColor, Bianco, 242, 183, RGB
+PixelGetColor, C2, 953, 177, RGB
+if (Bianco = 0xFFFFFF && C2 = 0xFFFFFF)
+{
+Send, {Numpad0} 
+}
+
+Sleep, 200
+CoordMode, Pixel, Window
+PixelGetColor, C1, 441, 181, RGB
+PixelGetColor, C2, 953, 177, RGB
+if (C1 = 0xFFFF63 && C2 = 0xFFFFFF)
+{
+Send, {Numpad1} 
+}
+else
+{
+Sleep, 200
+CoordMode, Pixel, Window
+PixelGetColor, C4, 956, 181, RGB
+if (C4 = 0xFFFF63)
+{
+Send, {Numpad2} 
+}}
 return
 
 
@@ -256,7 +313,6 @@ Send, ^v
 Sleep, 200
 Send, {Enter} 
 Sleep,  6000
-CoordMode, Mouse, Window
 CoordMode, Pixel, Window
 MouseMove, 518, 350, 0
 PixelGetColor, Colore, 518, 350, RGB
@@ -308,7 +364,8 @@ Sleep, 200
 Send, {Left}
 Sleep, 200
 Send, {Left}
-SoundBeep
+Sleep, 500
+
 return
 ;►►►►►► ERRORE MEDICO BASE
 Numpad9::
@@ -321,7 +378,7 @@ Sleep, 600
 WinActivate, ahk_class Chrome_WidgetWin_1
 WinWaitActive, ahk_class Chrome_WidgetWin_1
 Sleep, 400
-SoundBeep
+
 return
 
 
