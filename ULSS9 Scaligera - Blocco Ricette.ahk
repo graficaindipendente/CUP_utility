@@ -32,7 +32,6 @@ MsgBox, Fatto! Script eseguito %volte% volte.
 return
 
 
-
 ;►►►►►► INIZIO
 NumpadAdd::
 Sleep, 200
@@ -43,6 +42,11 @@ Sleep, 200
 WinActivate, ahk_class TscShellContainerClass
 WinWaitActive, ahk_class TscShellContainerClass  
 Sleep, 200
+CoordMode, Pixel, Window
+PixelGetColor, A1, 190, 475, RGB
+PixelGetColor, A2, 389, 673, RGB
+if (A1 = 0xFFFFBD && A2 = 0x08246B)
+{
 Send, ^v            
 Sleep, 200
 Send, {Enter}       
@@ -120,7 +124,7 @@ PixelGetColor, C4, 956, 181, RGB
 if (C4 = 0xFFFF63)
 {
 Send, {Numpad2} 
-}}
+}}}
 return
 
 
