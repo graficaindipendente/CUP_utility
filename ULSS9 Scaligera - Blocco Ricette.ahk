@@ -2,13 +2,13 @@
 
 ; Calcolo della posizione in alto a destra
 SysGet, MonitorWidth, 0
-xPos := MonitorWidth -1800
-yPos := 50
+xPos := MonitorWidth -1920
+yPos := 10
 
 Gui, -Caption +AlwaysOnTop +ToolWindow
 
-Gui, Add, Picture, w100 h100, numPad.png
-Gui, Show, x%xPos% y%yPos% w120 h120, NumpadPreview
+Gui, Add, Picture, w300 h200, numPad.png
+Gui, Show, x%xPos% y%yPos% w300 h200, NumpadPreview
 return
 
 NumLock::ExitApp
@@ -94,6 +94,7 @@ Send, {Numpad4}
 }
 else
 {
+
 Send, ^c
 Sleep, 200
 Send, {Enter} 
