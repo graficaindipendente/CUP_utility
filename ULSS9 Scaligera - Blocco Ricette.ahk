@@ -7,11 +7,26 @@ yPos := 50
 
 Gui, -Caption +AlwaysOnTop +ToolWindow
 
-Gui, Add, Picture, w200 h200, numPad.png
-Gui, Show, x%xPos% y%yPos% w220 h220, NumpadPreview
+Gui, Add, Picture, w100 h100, numPad.png
+Gui, Show, x%xPos% y%yPos% w120 h120, NumpadPreview
 return
 
 NumLock::ExitApp
+
+NumpadDot::
+    Suspend, Toggle
+
+    if (A_IsSuspended)
+    {
+        ToolTip, SOSPESO
+    }
+    else
+    {
+        ToolTip, 
+    }
+return
+
+
 NumpadDiv::
 InputBox, volte, Contatore, Quante ricette vuoi bloccare?, , 300, 150
 if ErrorLevel
