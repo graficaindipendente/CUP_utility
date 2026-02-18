@@ -40,6 +40,7 @@ F8::
     Gui, Add, Button, gNonParte w250, Non parte la telefonata
         Gui, Add, Button, gSospeso w250, APPUNTAMENTO SOSPESO
         Gui, Add, Button, gSposta w250, Confermato - chiamerà per spostare
+       Gui, Add, Button, gPagato w250, Correttamente pagato
 
     Gui, Show,, Esito chiamata
     return
@@ -79,6 +80,11 @@ NonParte:
     InserisciTesto("Confermato - chiamerà per spostare")
     return
 
+Pagato:
+    InserisciTesto("Ut dichiara avere già eseguito app.to in anticipo con questa prenotazione. Correttamente pagato.")
+    return
+
+
 InserisciTesto(testo) {
     Gui, PhoneStatus:Destroy
     FormatTime, dataOra,, dd/MM HH:mm
@@ -88,3 +94,6 @@ InserisciTesto(testo) {
 F7::
     SendInput UT dichiara di essere in possesso del foglio bianco con richiesta medico legale timbrata e firmata. Accetta prima data. Riferito pagamento PagoPa.
     return
+
+
+
