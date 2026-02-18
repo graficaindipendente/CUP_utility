@@ -13,7 +13,7 @@ return
 
 NumLock::ExitApp
 NumpadDiv::
-InputBox, volte, Contatore, Quante volte deve partire lo script?, , 300, 150
+InputBox, volte, Contatore, Quante ricette vuoi bloccare?, , 300, 150
 if ErrorLevel
     return
 
@@ -21,14 +21,14 @@ Loop, %volte%
 {
     ; === AZIONE DA RIPETERE ===
     Sleep, 1000 
-    ToolTip, Esecuzione %A_Index% di %volte%
+    ToolTip, Esecuzione %A_Index% di %volte% 
 Send, {NumpadAdd}   
 
     Sleep, 1000
 }
 
 ToolTip
-MsgBox, Fatto! Script eseguito %volte% volte.
+MsgBox, Fatto! Sono state bloccate %volte% ricette.
 return
 
 
