@@ -49,37 +49,30 @@ F8::
 Confermato:
     InserisciTesto("Confermato")
     return
-
 NonRisponde:
     InserisciTesto("Non Risponde")
     return
-
 NonRispondeSegreteria:
     InserisciTesto("Non Risponde + Segreteria")
     return
-
 Segreteria:
     InserisciTesto("Segreteria")
     return
-
 Occupato:
     InserisciTesto("Occupato")
     return
-
 Riattacca:
     InserisciTesto("Risponde e Riattacca")
     return
-
 NonParte:
     InserisciTesto("Non parte la telefonata")
     return
-    Sospeso:
+Sospeso:
     InserisciTesto("APPUNTAMENTO SOSPESO")
     return
-    Sposta:
+Sposta:
     InserisciTesto("Confermato - chiamerà per spostare")
     return
-
 Pagato:
     InserisciTesto("Ut dichiara avere già eseguito app.to in anticipo con questa prenotazione. Correttamente pagato.")
     return
