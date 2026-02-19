@@ -1,19 +1,21 @@
 ﻿F1::
 Send, {Tab}
-Sleep, 200
+Sleep, 400
 Send, {Space}
-Sleep, 200
+Sleep, 400
 Send, {Tab}
-Sleep, 200
+Sleep, 400
 Send, {Space}
-Sleep, 200
+Sleep, 400
 Send, {Tab}
-Sleep, 200
+Sleep, 400
 Send, {Space}
-Sleep, 200
+Sleep, 400
 return
 
-
+F2::
+MsgBox, RICORDATI CHE ALE TI AMA ^_^
+return
 
 F12::
 {
