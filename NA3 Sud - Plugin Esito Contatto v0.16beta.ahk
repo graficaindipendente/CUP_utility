@@ -1,4 +1,4 @@
-﻿Insert::
+﻿F1::
 Send, {Tab}
 Sleep, 200
 Send, {Space}
