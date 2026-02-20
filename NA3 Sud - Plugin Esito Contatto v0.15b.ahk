@@ -1,16 +1,15 @@
 ﻿F1::
 Send, {Tab}
-Sleep, 400
+Sleep, 200
 Send, {Space}
-Sleep, 400
+Sleep, 200
 Send, {Tab}
-Sleep, 400
+Sleep, 200
 Send, {Space}
-Sleep, 400
+Sleep, 500
 Send, {Tab}
-Sleep, 400
+Sleep, 500
 Send, {Space}
-Sleep, 400
 return
 
 F2::
