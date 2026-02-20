@@ -11,19 +11,12 @@ Gui, Add, Picture, w300 h200, numPad.png
 Gui, Show, x%xPos% y%yPos% w300 h200, NumpadPreview
 return
 
+
+
 NumLock::ExitApp
 
 NumpadDot::
-    Suspend, Toggle
-
-    if (A_IsSuspended)
-    {
-        ToolTip, SOSPESO
-    }
-    else
-    {
-        ToolTip, 
-    }
+MsgBox, NON IMPOSTATO
 return
 
 

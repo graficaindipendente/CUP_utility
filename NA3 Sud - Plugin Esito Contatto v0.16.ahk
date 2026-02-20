@@ -1,4 +1,4 @@
-﻿F1::
+﻿PrintScreen::
 Send, {Tab}
 Sleep, 200
 Send, {Space}
@@ -13,7 +13,7 @@ Send, {Space}
 return
 
 F2::
-MsgBox, RICORDATI CHE ALE TI AMA ^_^
+MsgBox, RICORDATI CHE ALE TI AMA ^_^ ma ti AMIAAAAAA tanto eh!!
 return
 
 F12::
@@ -46,7 +46,7 @@ F9::
 
 F8::
 {
-    Gui, PhoneStatus:New, +AlwaysOnTop +ToolWindow, NA3 Sud - Plugin Esito Contatto v0.15
+    Gui, PhoneStatus:New, +AlwaysOnTop +ToolWindow, NA3 Sud - Plugin Esito Contatto v0.16
     Gui, Add, Text,, Seleziona un'opzione:
 
     Gui, Add, Button, gConfermato w250, Confermato
