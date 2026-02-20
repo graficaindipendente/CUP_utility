@@ -1,4 +1,4 @@
-﻿PrintScreen::
+﻿Insert::
 Send, {Tab}
 Sleep, 200
 Send, {Space}
@@ -13,7 +13,7 @@ Send, {Space}
 return
 
 F2::
-MsgBox, RICORDATI CHE ALE TI AMA ^_^ ma ti AMIAAAAAA tanto eh!!
+MsgBox, RICORDATI CHE ALE TI AMA ^_^
 return
 
 F12::
