@@ -341,32 +341,13 @@ return
 
 
 
-;■■■■ NOTE SU SGP D1 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-
+;■■■■ NOTE SU SGP ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ScrollLock::
-Send, !a
-Sleep, 300
-MouseMove, 670, 615
-Click
-Sleep, 300
-Send, ^v
-Sleep, 500
-Send {Enter}
-Sleep, 200
-Send {Enter}
-Sleep, 200
-Send, !c
-Sleep, 300
-Send, !s
-Sleep, 300
-Send, !o
-Sleep, 300
-MsgBox, NOTA INSERITA in D1
-return
-
-;■■■■ NOTE SU SGP D4 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-
-Pause::
+CoordMode, Pixel, Window
+PixelGetColor, grigio, 688, 42, RGB
+PixelGetColor, grigio2, 980, 261, RGB
+if (grigio = 0x848284 && grigio2 = 0x848284)
+{
 Send, !a
 Sleep, 800
 MouseMove, 670, 615
@@ -390,17 +371,72 @@ Send { Enter }
 Sleep, 200
 Send, !o
 Sleep, 200
-MsgBox, NOTA INSERITA in D4
+ToolTip, NOTA INSERITA in D4
+Sleep, 5000
+ToolTip  ; Chiude il ToolTip
+}
+else
+{
+Send, !a
+Sleep, 300
+MouseMove, 670, 615
+Click
+Sleep, 300
+Send, ^v
+Sleep, 500
+Send {Enter}
+Sleep, 200
+Send {Enter}
+Sleep, 200
+Send, !c
+Sleep, 300
+Send, !s
+Sleep, 300
+Send, !o
+Sleep, 300
+ToolTip, NOTA INSERITA in D1
+Sleep, 5000
+ToolTip  ; Chiude il ToolTip
+}
+return
+
+;■■■■  CHIAMATA SU MICROSIP ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+$F2::
+    startTime := A_TickCount
+    KeyWait, F2
+    duration := A_TickCount - startTime
+    if (duration >= 500) {
+Send { F2 }
+    } else {
+WinActivate, ahk_class MicroSIP
+WinWaitActive, ahk_class MicroSIP
+Sleep, 50
+Send { F2 }
+}
 return
 
 
+F9::
+Send ^c 
+WinActivate, ahk_class MicroSIP
+WinWaitActive, ahk_class MicroSIP
+Sleep, 50
+MouseMove, 72, 313
+Click
+Sleep, 50
+Send ^v
+Sleep, 50
+Send { Enter }
+return
 
 
-;■■■■ CHIUSURA CHIAMATA SU MICROSIP ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 Launch_Media::
 WinActivate, ahk_class MicroSIP
 WinWaitActive, ahk_class MicroSIP
 Sleep, 50
 Send { F4 }
-Sleep, 50
 return
+
+
+
+
