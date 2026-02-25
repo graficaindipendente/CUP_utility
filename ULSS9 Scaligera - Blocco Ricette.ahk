@@ -1,13 +1,3 @@
-ToolTip #Persistent
-
-SetTimer, MoveToolTip, 100
-
-MoveToolTip:
-MouseGetPos, xpos, ypos
-ToolTip, BLOCCO RICETTE, xpos + 15, ypos + 15
-return
-
-
 NumLock::ExitApp
 
 NumpadDot::
@@ -22,24 +12,11 @@ if ErrorLevel
 
 Loop, %volte%
 {
-    ; === AZIONE DA RIPETERE ===
     Sleep, 1000 
-    ToolTip
-   ToolTip BLOCCO RICETTE`n Esecuzione Automatica %A_Index% di %volte%
+ToolTip, Esecuzione Automatica %A_Index% di %volte%
 Send, {NumpadAdd}   
-
     Sleep, 1000
 }
-
-ToolTip
-ToolTip #Persistent
-
-SetTimer, MoveToolTip2, 100
-
-MoveToolTip2:
-MouseGetPos, xpos, ypos
-ToolTip, BLOCCO RICETTE, xpos + 15, ypos + 15
-TrayTip, Fatto!, Sono state bloccate %volte% ricette., 10
 return
 
 
