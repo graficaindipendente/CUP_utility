@@ -1,3 +1,13 @@
+SysGet, MonitorWidth, 0
+xPos := MonitorWidth -1900
+yPos := 30
+
+Gui, -Caption +AlwaysOnTop +ToolWindow
+
+Gui, Add, Picture, w190 h120, numPad.png
+Gui, Show, x%xPos% y%yPos% w210 h140, NumpadPreview
+return
+
 NumLock::ExitApp
 
 NumpadDot::
@@ -202,9 +212,8 @@ WinActivate, ahk_class Chrome_WidgetWin_1
 WinWaitActive, ahk_class Chrome_WidgetWin_1
 Sleep, 100
 }
-Sleep, 2000
+Sleep, 1500
 SoundBeep
-TrayTip, Fatto!, Ricetta Bloccata, 10
 return
 
 ;►►►►►► SECONDA PARTE CON INSERIMENTO DI UNA PRENOTAZIONE
@@ -233,7 +242,6 @@ return
 
 
 
-;►►►►►► ERRORI ►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
 ;►►►►►► ERRORI ►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
 ;►►►►►► errore doppio nominativo
 !Numpad4::
