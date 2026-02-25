@@ -1,4 +1,13 @@
-ToolTip BLOCCO RICETTE`nAle
+ToolTip #Persistent
+
+SetTimer, MoveToolTip, 100
+
+MoveToolTip:
+MouseGetPos, xpos, ypos
+ToolTip, BLOCCO`nRICETTE, xpos + 15, ypos + 15
+return
+
+Esc::ExitApp
 
 NumLock::ExitApp
 
@@ -16,6 +25,7 @@ Loop, %volte%
 {
     ; === AZIONE DA RIPETERE ===
     Sleep, 1000 
+    ToolTip
    ToolTip BLOCCO RICETTE`n Esecuzione Automatica %A_Index% di %volte%
 Send, {NumpadAdd}   
 
@@ -23,6 +33,13 @@ Send, {NumpadAdd}
 }
 
 ToolTip
+ToolTip #Persistent
+
+SetTimer, MoveToolTip2, 100
+
+MoveToolTip2:
+MouseGetPos, xpos, ypos
+ToolTip, BLOCCO`nRICETTE, xpos + 15, ypos + 15
 TrayTip, Fatto!, Sono state bloccate %volte% ricette., 10
 return
 
@@ -211,6 +228,7 @@ Sleep, 100
 }
 Sleep, 2000
 SoundBeep
+TrayTip, Fatto!, Ricetta Bloccata, 10
 return
 
 ;►►►►►► SECONDA PARTE CON INSERIMENTO DI UNA PRENOTAZIONE

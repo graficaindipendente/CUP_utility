@@ -1,5 +1,12 @@
 
 F11::
-; TrayTip che mostra "Ciao"
-TrayTip, Titolo, Ciao, 10
+#Persistent
+
+SetTimer, MoveToolTip, 100
+
+MoveToolTip:
+MouseGetPos, xpos, ypos
+ToolTip, CIAO, xpos + 15, ypos + 15
 return
+
+Esc::ExitApp
