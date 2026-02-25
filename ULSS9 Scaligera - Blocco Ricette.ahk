@@ -7,7 +7,6 @@ MouseGetPos, xpos, ypos
 ToolTip, BLOCCO RICETTE, xpos + 15, ypos + 15
 return
 
-Esc::ExitApp
 
 NumLock::ExitApp
 
@@ -536,7 +535,6 @@ Sleep, 600
 WinActivate, ahk_class Chrome_WidgetWin_1
 WinWaitActive, ahk_class Chrome_WidgetWin_1
 Sleep, 400
-
 return
 
 
