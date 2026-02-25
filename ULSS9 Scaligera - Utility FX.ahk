@@ -323,7 +323,7 @@ NumLock::
 }
 
 F5::
-    Run, C:\Users\CUP_VR_ale\Documents\GitHub\CUP_utility\ULSS9 Scaligera - Blocco Ricette.ahk
+    Run, C:\Users\CUP_VR_ale\Documents\GitHub\CUP_utility\ULSS9 Scaligera - Blocco Ricette.exe
 return
 
 

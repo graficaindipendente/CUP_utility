@@ -1,17 +1,17 @@
-SysGet, MonitorWidth, 0
-xPos := MonitorWidth -1900
-yPos := 30
-
-Gui, -Caption +AlwaysOnTop +ToolWindow
-
-Gui, Add, Picture, w190 h120, numPad.png
-Gui, Show, x%xPos% y%yPos% w210 h140, NumpadPreview
-return
-
 NumLock::ExitApp
 
 NumpadDot::
-MsgBox, NON IMPOSTATO
+InputBox, volte, Contatore, Quante ricette vuoi bloccare?, , 300, 150
+if ErrorLevel
+    return
+
+Loop, %volte%
+{
+    Sleep, 3000 
+ToolTip, Esecuzione Automatica %A_Index% di %volte%
+Send, !{NumpadAdd}   
+    Sleep, 3000
+}
 return
 
 
@@ -103,25 +103,25 @@ if (Colore = 0x08246B)
 {
 result := ""
 
-Gui, Add, Button, x10 y10 w140 h30 gButtonGiaBloccato, GIA BLOCCATO
-Gui, Add, Button, x160 y10 w140 h30 gButtonPrenotato, PRENOTATO D1
-Gui, Add, Button, x310 y10 w140 h30 gButtonAltro, ALTRO
+Gui, Add, Button, x10 y10 w140 h30 gButtonGiaBloccato1, GIA BLOCCATO
+Gui, Add, Button, x160 y10 w140 h30 gButtonPrenotato1, PRENOTATO D1
+Gui, Add, Button, x310 y10 w140 h30 gButtonAltro1, ALTRO
 Gui, Show, w460 h50, LA RICETTA RISULTA BLOCCATA
 return
 
-ButtonGiaBloccato:
+ButtonGiaBloccato1:
 result := "GIA BLOCCATO"
 Gui, Destroy
 Send, !{Numpad8}
 return
 
-ButtonPrenotato:
+ButtonPrenotato1:
 result := "PRENOTATO D1"
 Gui, Destroy
 Send, !{Numpad5}
 return
 
-ButtonAltro:
+ButtonAltro1:
 result := "ALTRO"
 Gui, Destroy
 Send, !{Numpad3}
@@ -269,7 +269,31 @@ CoordMode, Pixel, Window
 PixelGetColor, Colore, 518, 350, RGB
 if (Colore = 0x08246B)
 {
-Send, !{Numpad8} 
+result := ""
+
+Gui, Add, Button, x10 y10 w140 h30 gButtonGiaBloccato2, GIA BLOCCATO
+Gui, Add, Button, x160 y10 w140 h30 gButtonPrenotato2, PRENOTATO D1
+Gui, Add, Button, x310 y10 w140 h30 gButtonAltro2, ALTRO
+Gui, Show, w460 h50, LA RICETTA RISULTA BLOCCATA
+return
+
+ButtonGiaBloccato2:
+result := "GIA BLOCCATO"
+Gui, Destroy
+Send, !{Numpad8}
+return
+
+ButtonPrenotato2:
+result := "PRENOTATO D1"
+Gui, Destroy
+Send, !{Numpad5}
+return
+
+ButtonAltro2:
+result := "ALTRO"
+Gui, Destroy
+Send, !{Numpad3}
+return
 }
 
 Sleep,  200
@@ -353,7 +377,31 @@ MouseMove, 518, 350, 0
 PixelGetColor, Colore, 518, 350, RGB
 if (Colore = 0x08246B)
 {
-Send, !{Numpad8} 
+result := ""
+
+Gui, Add, Button, x10 y10 w140 h30 gButtonGiaBloccato0, GIA BLOCCATO
+Gui, Add, Button, x160 y10 w140 h30 gButtonPrenotato0, PRENOTATO D1
+Gui, Add, Button, x310 y10 w140 h30 gButtonAltro0, ALTRO
+Gui, Show, w460 h50, LA RICETTA RISULTA BLOCCATA
+return
+
+ButtonGiaBloccato0:
+result := "GIA BLOCCATO"
+Gui, Destroy
+Send, !{Numpad8}
+return
+
+ButtonPrenotato0:
+result := "PRENOTATO D1"
+Gui, Destroy
+Send, !{Numpad5}
+return
+
+ButtonAltro0:
+result := "ALTRO"
+Gui, Destroy
+Send, !{Numpad3}
+return
 }
 return
 ;►►►►►► SE RICETTA GIA' BLOCCATA
@@ -558,4 +606,137 @@ Click
 Sleep, 300
 Send, !c
 Sleep, 200
+return
+
+
+
+
+
+
+!NumpadAdd::
+Sleep, 800
+Clipboard :=
+Sleep, 800
+Send, ^c            
+Sleep, 800
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass  
+Sleep, 800
+CoordMode, Pixel, Window
+PixelGetColor, A1, 190, 475, RGB
+PixelGetColor, A2, 389, 673, RGB
+if (A1 = 0xFFFFBD && A2 = 0x08246B)
+{
+MouseMove, 562, 344
+Click
+Sleep, 300
+SendInput, ^a
+Sleep, 800
+SendInput, {Delete}    
+Sleep, 800
+Send, ^v            
+Sleep, 800
+Send, {Enter}       
+Sleep, 800
+Send, {Space}       
+Sleep, 800
+WinActivate, ahk_class Chrome_WidgetWin_1
+WinWaitActive, ahk_class Chrome_WidgetWin_1
+Sleep, 800
+Send, {Right}
+Sleep, 800
+Send, ^c
+Sleep, 1200
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 600
+CoordMode, Pixel, Window
+PixelGetColor, Colore10, 856, 430, RGB
+if (Colore10 = 0xFFFFBD)
+{
+Send, !{Numpad7} 
+}
+else
+{
+CoordMode, Pixel, Window
+PixelGetColor, Colore20, 221, 569, RGB
+if (Colore20 = 0x000000)
+{
+Send, !{Numpad4} 
+
+}
+else
+{
+
+Send, ^c
+Sleep, 600
+Send, {Enter} 
+Sleep, 1200
+MouseMove, 775, 680
+Click
+Sleep, 800
+Send, ^v
+Sleep, 800
+Send, {Enter} 
+Sleep,  10000
+CoordMode, Pixel, Window
+PixelGetColor, Colore00, 518, 350, RGB
+if (Colore00 = 0x08246B)
+{
+result := ""
+
+Gui, Add, Button, x10 y10 w140 h30 gButtonGiaBloccato10, GIA BLOCCATO
+Gui, Add, Button, x160 y10 w140 h30 gButtonPrenotato10, PRENOTATO D1
+Gui, Add, Button, x310 y10 w140 h30 gButtonAltro10, ALTRO
+Gui, Show, w460 h50, LA RICETTA RISULTA BLOCCATA
+return
+
+ButtonGiaBloccato10:
+result := "GIA BLOCCATO"
+Gui, Destroy
+Send, !{Numpad8}
+return
+
+ButtonPrenotato10:
+result := "PRENOTATO D1"
+Gui, Destroy
+Send, !{Numpad5}
+return
+
+ButtonAltro10:
+result := "ALTRO"
+Gui, Destroy
+Send, !{Numpad3}
+return
+    
+}
+}
+}
+
+Sleep,  1000
+CoordMode, Pixel, Window
+PixelGetColor, Bianco00, 242, 183, RGB
+PixelGetColor, C200, 751, 180, RGB
+if (Bianco00 = 0xFFFFFF && C200 = 0xFFFFFF)
+{
+Send, !{Numpad0} 
+}
+
+Sleep, 1000
+CoordMode, Pixel, Window
+PixelGetColor, C100, 441, 181, RGB
+PixelGetColor, C200, 751, 180, RGB
+if (C100 = 0xFFFF63 && C200 = 0xFFFFFF)
+{
+Send, !{Numpad1} 
+}
+else
+{
+Sleep, 1000
+CoordMode, Pixel, Window
+PixelGetColor, C400, 751, 180, RGB
+if (C400 = 0xFFFF63)
+{
+Send, !{Numpad2} 
+}}}
 return
