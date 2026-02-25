@@ -4,7 +4,7 @@ SetTimer, MoveToolTip, 100
 
 MoveToolTip:
 MouseGetPos, xpos, ypos
-ToolTip, BLOCCO`nRICETTE, xpos + 15, ypos + 15
+ToolTip, BLOCCO RICETTE, xpos + 15, ypos + 15
 return
 
 Esc::ExitApp
@@ -39,7 +39,7 @@ SetTimer, MoveToolTip2, 100
 
 MoveToolTip2:
 MouseGetPos, xpos, ypos
-ToolTip, BLOCCO`nRICETTE, xpos + 15, ypos + 15
+ToolTip, BLOCCO RICETTE, xpos + 15, ypos + 15
 TrayTip, Fatto!, Sono state bloccate %volte% ricette., 10
 return
 
