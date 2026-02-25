@@ -1,5 +1,5 @@
 
 F11::
-ToolTip, Messaggio visibile
-Sleep, 2000
-ToolTip  ; Chiude il ToolTip
+; TrayTip che mostra "Ciao"
+TrayTip, Titolo, Ciao, 10
+return

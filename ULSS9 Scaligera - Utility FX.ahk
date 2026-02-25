@@ -372,7 +372,7 @@ Sleep, 200
 Send, !o
 Sleep, 200
 ToolTip, NOTA INSERITA in D4
-Sleep, 5000
+Sleep, 10000
 ToolTip  ; Chiude il ToolTip
 }
 else
@@ -395,7 +395,7 @@ Sleep, 300
 Send, !o
 Sleep, 300
 ToolTip, NOTA INSERITA in D1
-Sleep, 5000
+Sleep, 10000
 ToolTip  ; Chiude il ToolTip
 }
 return

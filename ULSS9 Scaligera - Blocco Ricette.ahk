@@ -1,17 +1,4 @@
-; Mostra una finestra 100x100 in alto a destra con un'immagine
-
-; Calcolo della posizione in alto a destra
-SysGet, MonitorWidth, 0
-xPos := MonitorWidth -1920
-yPos := 10
-
-Gui, -Caption +AlwaysOnTop +ToolWindow
-
-Gui, Add, Picture, w300 h200, numPad.png
-Gui, Show, x%xPos% y%yPos% w300 h200, NumpadPreview
-return
-
-
+ ToolTip BLOCCO RICETTE
 
 NumLock::ExitApp
 
@@ -29,14 +16,14 @@ Loop, %volte%
 {
     ; === AZIONE DA RIPETERE ===
     Sleep, 1000 
-    ToolTip, Esecuzione %A_Index% di %volte% 
+   ToolTip BLOCCO RICETTE`n Esecuzione Automatica %A_Index% di %volte%
 Send, {NumpadAdd}   
 
     Sleep, 1000
 }
 
 ToolTip
-MsgBox, Fatto! Sono state bloccate %volte% ricette.
+TrayTip, Fatto!, Sono state bloccate %volte% ricette., 10
 return
 
 
@@ -75,7 +62,7 @@ CoordMode, Pixel, Window
 PixelGetColor, Colore1, 856, 430, RGB
 if (Colore1 = 0xFFFFBD)
 {
-Send, {Numpad7} 
+Send, !{Numpad7} 
 }
 else
 {
@@ -83,7 +70,8 @@ CoordMode, Pixel, Window
 PixelGetColor, Colore2, 221, 569, RGB
 if (Colore2 = 0x000000)
 {
-Send, {Numpad4} 
+Send, !{Numpad4} 
+
 }
 else
 {
@@ -103,7 +91,32 @@ CoordMode, Pixel, Window
 PixelGetColor, Colore, 518, 350, RGB
 if (Colore = 0x08246B)
 {
-Send, {Numpad8} 
+result := ""
+
+Gui, Add, Button, x10 y10 w140 h30 gButtonGiaBloccato, GIA BLOCCATO
+Gui, Add, Button, x160 y10 w140 h30 gButtonPrenotato, PRENOTATO D1
+Gui, Add, Button, x310 y10 w140 h30 gButtonAltro, ALTRO
+Gui, Show, w460 h50, LA RICETTA RISULTA BLOCCATA
+return
+
+ButtonGiaBloccato:
+result := "GIA BLOCCATO"
+Gui, Destroy
+Send, !{Numpad8}
+return
+
+ButtonPrenotato:
+result := "PRENOTATO D1"
+Gui, Destroy
+Send, !{Numpad5}
+return
+
+ButtonAltro:
+result := "ALTRO"
+Gui, Destroy
+Send, !{Numpad3}
+return
+    
 }
 }
 }
@@ -114,7 +127,7 @@ PixelGetColor, Bianco, 242, 183, RGB
 PixelGetColor, C2, 751, 180, RGB
 if (Bianco = 0xFFFFFF && C2 = 0xFFFFFF)
 {
-Send, {Numpad0} 
+Send, !{Numpad0} 
 }
 
 Sleep, 200
@@ -123,7 +136,7 @@ PixelGetColor, C1, 441, 181, RGB
 PixelGetColor, C2, 751, 180, RGB
 if (C1 = 0xFFFF63 && C2 = 0xFFFFFF)
 {
-Send, {Numpad1} 
+Send, !{Numpad1} 
 }
 else
 {
@@ -132,13 +145,13 @@ CoordMode, Pixel, Window
 PixelGetColor, C4, 751, 180, RGB
 if (C4 = 0xFFFF63)
 {
-Send, {Numpad2} 
+Send, !{Numpad2} 
 }}}
 return
 
 
 ;►►►►►► SECONDA PARTE
-Numpad0::
+!Numpad0::
 Send, !c
 Sleep, 200
 MouseMove, 422, 263
@@ -180,7 +193,7 @@ CoordMode, Pixel, Window
 PixelGetColor, Colore, 514, 362, RGB
 if (Colore = 0x08246B)
 {
-Send, {Numpad9} 
+Send, !{Numpad9} 
 Sleep, 200
 }
 else
@@ -194,16 +207,16 @@ SoundBeep
 return
 
 ;►►►►►► SECONDA PARTE CON INSERIMENTO DI UNA PRENOTAZIONE
-Numpad1::
+!Numpad1::
 Send, {Tab}
 Sleep, 200
 Send, {Down}
 Sleep, 200
-Send, {Numpad0}
+Send, !{Numpad0}
 return
 
 ;►►►►►► SECONDA PARTE CON INSERIMENTO DI DUE PRENOTAZIONI complete
-Numpad2::
+!Numpad2::
 Send, {Tab}
 Sleep, 200
 Send, {Down}
@@ -214,7 +227,7 @@ Send, {Tab}
 Sleep, 200
 Send, {Down}
 Sleep, 200
-Send, {Numpad0}
+Send, !{Numpad0}
 return
 
 
@@ -222,7 +235,7 @@ return
 ;►►►►►► ERRORI ►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
 ;►►►►►► ERRORI ►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
 ;►►►►►► errore doppio nominativo
-Numpad4::
+!Numpad4::
 Send, !c
 Sleep, 200
 Send, {Space}       
@@ -247,7 +260,7 @@ CoordMode, Pixel, Window
 PixelGetColor, Colore, 518, 350, RGB
 if (Colore = 0x08246B)
 {
-Send, {Numpad8} 
+Send, !{Numpad8} 
 }
 
 Sleep,  200
@@ -256,7 +269,7 @@ PixelGetColor, Bianco, 242, 183, RGB
 PixelGetColor, C2, 751, 180, RGB
 if (Bianco = 0xFFFFFF && C2 = 0xFFFFFF)
 {
-Send, {Numpad0} 
+Send, !{Numpad0} 
 }
 
 Sleep, 200
@@ -265,7 +278,7 @@ PixelGetColor, C1, 441, 181, RGB
 PixelGetColor, C2, 751, 180, RGB
 if (C1 = 0xFFFF63 && C2 = 0xFFFFFF)
 {
-Send, {Numpad1} 
+Send, !{Numpad1} 
 }
 else
 {
@@ -274,14 +287,14 @@ CoordMode, Pixel, Window
 PixelGetColor, C4, 751, 180, RGB
 if (C4 = 0xFFFF63)
 {
-Send, {Numpad2} 
+Send, !{Numpad2} 
 }}
 return
 
 
 
 ;►►►►►► errore diabete
-Numpad6::
+!Numpad6::
 Send, !i
 Sleep, 200
 MouseMove, 422, 263
@@ -300,7 +313,7 @@ Send, !c
 Sleep, 600
 return
 ;►►►►►► errore telefono
-Numpad7::
+!Numpad7::
 Send, {Space}
 Sleep, 200
 MouseMove, 785, 430
@@ -331,11 +344,11 @@ MouseMove, 518, 350, 0
 PixelGetColor, Colore, 518, 350, RGB
 if (Colore = 0x08246B)
 {
-Send, {Numpad8} 
+Send, !{Numpad8} 
 }
 return
 ;►►►►►► SE RICETTA GIA' BLOCCATA
-Numpad8::
+!Numpad8::
 Send, {Space}
 Sleep, 200
 Send, !u
@@ -378,10 +391,117 @@ Send, {Left}
 Sleep, 200
 Send, {Left}
 Sleep, 500
-
 return
+
+;►►►►►► SE RICETTA GIA' BLOCCATA
+!Numpad5::
+Send, {Space}
+Sleep, 200
+Send, !u
+Sleep, 200
+Send, {Esc}
+Sleep, 200
+Send, !p
+Sleep, 200
+Send, {Down}
+Sleep, 100
+Send, {Enter} 
+Sleep, 200
+MouseMove, 388, 271
+Click
+Sleep, 200
+MouseMove, 388, 286
+Sleep, 300
+MouseMove, 388, 271
+Click
+Sleep, 300
+MouseMove, 388, 286
+Click
+Sleep, 300
+Send, !c
+Sleep, 200
+WinActivate, ahk_class Chrome_WidgetWin_1
+WinWaitActive, ahk_class Chrome_WidgetWin_1
+Sleep, 100
+Send, {Right}
+Sleep, 200
+Send, {Right}
+Sleep, 200
+Send, preno
+Sleep, 200
+Send, {Enter} 
+Sleep, 200
+Send, {Left}
+Sleep, 200
+Send, {Left}
+Sleep, 200
+Send, {Left}
+Sleep, 500
+return
+
+;►►►►►► SE RICETTA GIA' BLOCCATA
+!NumPad3::
+Send, {Space}
+Sleep, 200
+Send, !u
+Sleep, 200
+Send, {Esc}
+Sleep, 200
+Send, !p
+Sleep, 200
+Send, {Down}
+Sleep, 100
+Send, {Enter} 
+Sleep, 200
+MouseMove, 388, 271
+Click
+Sleep, 200
+MouseMove, 388, 286
+Sleep, 300
+MouseMove, 388, 271
+Click
+Sleep, 300
+MouseMove, 388, 286
+Click
+Sleep, 300
+Send, !c
+Sleep, 200
+WinActivate, ahk_class Chrome_WidgetWin_1
+WinWaitActive, ahk_class Chrome_WidgetWin_1
+Sleep, 100
+Send, {Right}
+Sleep, 200
+Send, {Right}
+Sleep, 200
+Send, altro
+Sleep, 200
+Send, {Enter} 
+Sleep, 200
+Send, {Right}
+Sleep, 200
+Send, {Right}
+Sleep, 200
+Send, {Up}
+Sleep, 500
+InputBox, motivo, , Inserisci motivo?
+SendInput, %motivo%
+Sleep, 200
+Send, {Enter} 
+Sleep, 150
+Send, {Left}
+Sleep, 150
+Send, {Left}
+Sleep, 150
+Send, {Left}
+Sleep, 150
+Send, {Left}
+Sleep, 150
+Send, {Left}
+Sleep, 150
+return
+
 ;►►►►►► ERRORE MEDICO BASE
-Numpad9::
+!Numpad9::
 Send, {Space}
 Sleep, 600
 Send, !f    
