@@ -1,4 +1,4 @@
- ToolTip BLOCCO RICETTE
+ToolTip BLOCCO RICETTE`nAle
 
 NumLock::ExitApp
 
