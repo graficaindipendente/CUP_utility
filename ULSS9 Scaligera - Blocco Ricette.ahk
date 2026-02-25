@@ -42,6 +42,13 @@ PixelGetColor, A1, 190, 475, RGB
 PixelGetColor, A2, 389, 673, RGB
 if (A1 = 0xFFFFBD && A2 = 0x08246B)
 {
+MouseMove, 562, 344
+Click
+Sleep, 50
+SendInput, ^a
+Sleep, 100
+SendInput, {Delete}    
+Sleep, 100
 Send, ^v            
 Sleep, 200
 Send, {Enter}       
