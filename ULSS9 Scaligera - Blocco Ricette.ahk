@@ -1,7 +1,7 @@
 NumLock::ExitApp
 
 NumpadDot::
-InputBox, volte, Contatore, Quante ricette vuoi bloccare?, , 300, 150
+InputBox, volte, Contatore, Quante ricette vuoi bloccare moooolto lentamente?, , 300, 150
 if ErrorLevel
     return
 
@@ -739,4 +739,87 @@ if (C400 = 0xFFFF63)
 {
 Send, !{Numpad2} 
 }}}
+return
+
+
+
+AppsKey::
+{
+
+    Gui, Add, Text,, Seleziona un'opzione:
+
+    Gui, Add, Button, g00 w300, 00 NRE nessuna prestazione
+    Gui, Add, Button, g01 w300, 01 NRE con una prestazione
+    Gui, Add, Button, g02 w300, 02 NRE con due prestazioni
+    Gui, Add, Button, g03 w300, 03 Ricetta Gia' Bloccata ALTRO
+    Gui, Add, Button, g04 w300, 04 Doppio Utente
+    Gui, Add, Button, g05 w300, 05 Ricetta Gia' Bloccata D1
+    Gui, Add, Button, g06 w300, 06 Errore Diabete
+    Gui, Add, Button, g07 w300, 07 Errore Telefono
+    Gui, Add, Button, g08 w300, 08 Ricetta Gia' Bloccata GIA BLOCCATA
+    Gui, Add, Button, g09 w300, 09 Errore Medico di Base
+
+    Gui, Show,, BLOCCO RICETTE 
+    return
+}
+
+00:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{Numpad0} 
+    return
+01:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{Numpad1} 
+    return
+02:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{Numpad2} 
+    return
+03:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{Numpad3} 
+    return
+04:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{Numpad4} 
+    return
+05:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{Numpad5} 
+    return
+06:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{Numpad6} 
+    return
+07:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{Numpad7} 
+return
+08:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{Numpad8} 
+    return
+09:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{Numpad9} 
 return

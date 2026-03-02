@@ -256,8 +256,8 @@ F3::
         Gui, Add, Button, gRemoveNewLines x+10 yp w100, no line break
 
         SysGet, Mon, MonitorWorkArea
-        x := MonRight - 400
-        y := MonBottom - 150
+        x := MonRight - 370
+        y := MonBottom - 175
 
         Gui, Show, x%x% y%y%, ULSS9 Scaligera - noTemp.tab
         guiCreated := true

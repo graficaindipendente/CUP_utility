@@ -1,12 +1,15 @@
+#NoEnv
+SetBatchLines -1
 
-F11::
-#Persistent
+videoPath := "C:\Users\gonzo\AppData\Local\Playnite\intro.mp4"  ; Modifica questo
+appPath := "C:\Users\gonzo\AppData\Local\Playnite\Playnite.FullscreenApp.exe"
 
-SetTimer, MoveToolTip, 100
+; Avvia Playnite in background
+Run, %appPath%, , Hide
 
-MoveToolTip:
-MouseGetPos, xpos, ypos
-ToolTip, CIAO, xpos + 15, ypos + 15
-return
+Sleep, 500
 
-Esc::ExitApp
+; Avvia VLC a schermo intero (se è il tuo player)
+Run, "C:\Program Files\VideoLAN\VLC\vlc.exe" --fullscreen "%videoPath%"
+
+ExitApp
