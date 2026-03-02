@@ -684,7 +684,6 @@ PixelGetColor, Colore00, 518, 350, RGB
 if (Colore00 = 0x08246B)
 {
 result := ""
-
 Gui, Add, Button, x10 y10 w140 h30 gButtonGiaBloccato10, GIA BLOCCATO
 Gui, Add, Button, x160 y10 w140 h30 gButtonPrenotato10, PRENOTATO D1
 Gui, Add, Button, x310 y10 w140 h30 gButtonAltro10, ALTRO
@@ -769,60 +768,70 @@ AppsKey::
 }
 
 A1:
+Gui, Destroy
 WinActivate, ahk_class Chrome_WidgetWin_1
 WinWaitActive, ahk_class Chrome_WidgetWin_1
 Sleep, 200
 Send, {NumpadAdd} 
     return
 A2:
+Gui, Destroy
 WinActivate, ahk_class TscShellContainerClass
 WinWaitActive, ahk_class TscShellContainerClass
 Sleep, 200
 Send, !{Numpad7} 
     return
 A3:
+Gui, Destroy
 WinActivate, ahk_class TscShellContainerClass
 WinWaitActive, ahk_class TscShellContainerClass
 Sleep, 200
 Send, !{Numpad0} 
     return
 A4:
+Gui, Destroy
 WinActivate, ahk_class TscShellContainerClass
 WinWaitActive, ahk_class TscShellContainerClass
 Sleep, 200
 Send, !{Numpad8} 
     return
 A5:
+Gui, Destroy
 WinActivate, ahk_class TscShellContainerClass
 WinWaitActive, ahk_class TscShellContainerClass
 Sleep, 200
 Send, !{Numpad9} 
     return
 B1:
+Gui, Destroy
 WinActivate, ahk_class Chrome_WidgetWin_1
 WinWaitActive, ahk_class Chrome_WidgetWin_1
 Sleep, 200
 Send, !{NumpadDiv} 
     return
 B2:
+Gui, Destroy
 WinActivate, ahk_class TscShellContainerClass
 WinWaitActive, ahk_class TscShellContainerClass
 Sleep, 200
 Send, !{Numpad4} 
     return
 B3:
+Gui, Destroy
 WinActivate, ahk_class TscShellContainerClass
 WinWaitActive, ahk_class TscShellContainerClass
 Sleep, 200
 Send, !{Numpad1} 
     return
 B4:
+Gui, Destroy
 WinActivate, ahk_class TscShellContainerClass
 WinWaitActive, ahk_class TscShellContainerClass
 Sleep, 200
 Send, !{Numpad5} 
     return
 B5:
+Gui, Destroy
 WinActivate, ahk_class TscShellContainerClass
 WinWaitActive, ahk_class TscShellContainerClass
 Sleep, 200
@@ -830,21 +839,25 @@ Send, !{Numpad6}
 return
 
 C1:
+Gui, Destroy
 WinActivate, ahk_class TscShellContainerClass
 WinWaitActive, ahk_class TscShellContainerClass
 Sleep, 200
 Send, !{NumpadDot} 
     return
 C2:
+Gui, Destroy
 return
 
 C3:
+Gui, Destroy
 WinActivate, ahk_class TscShellContainerClass
 WinWaitActive, ahk_class TscShellContainerClass
 Sleep, 200
 Send, !{Numpad2} 
     return
 C4:
+Gui, Destroy
 WinActivate, ahk_class TscShellContainerClass
 WinWaitActive, ahk_class TscShellContainerClass
 Sleep, 200
@@ -852,4 +865,5 @@ Send, !{Numpad3}
     return
 
 C5:
+Gui, Destroy
 return
