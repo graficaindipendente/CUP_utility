@@ -1,6 +1,6 @@
 NumLock::ExitApp
 
-NumpadDot::
+!NumpadDot::
 InputBox, volte, Contatore, Quante ricette vuoi bloccare moooolto lentamente?, , 300, 150
 if ErrorLevel
     return
@@ -15,7 +15,7 @@ Send, !{NumpadAdd}
 return
 
 
-NumpadDiv::
+!NumpadDiv::
 InputBox, volte, Contatore, Quante ricette vuoi bloccare?, , 300, 150
 if ErrorLevel
     return
@@ -746,80 +746,110 @@ return
 AppsKey::
 {
 
-    Gui, Add, Text,, Seleziona un'opzione:
+    Gui, Add, Button, gA1 X10 y10 w200 h30, ADD
+    Gui, Add, Button, gA2 X10 y50 w200 h30, Telefono
+    Gui, Add, Button, gA3 X10 y90 w200 h30, 0xNRE
+    Gui, Add, Button, gA4 X10 y130 w200 h30, Gia' Bloccata
+    Gui, Add, Button, gA5 X10 y170 w200 h30, Errore Medico
 
-    Gui, Add, Button, g00 w300, 00 NRE nessuna prestazione
-    Gui, Add, Button, g01 w300, 01 NRE con una prestazione
-    Gui, Add, Button, g02 w300, 02 NRE con due prestazioni
-    Gui, Add, Button, g03 w300, 03 Ricetta Gia' Bloccata ALTRO
-    Gui, Add, Button, g04 w300, 04 Doppio Utente
-    Gui, Add, Button, g05 w300, 05 Ricetta Gia' Bloccata D1
-    Gui, Add, Button, g06 w300, 06 Errore Diabete
-    Gui, Add, Button, g07 w300, 07 Errore Telefono
-    Gui, Add, Button, g08 w300, 08 Ricetta Gia' Bloccata GIA BLOCCATA
-    Gui, Add, Button, g09 w300, 09 Errore Medico di Base
+    Gui, Add, Button, gB1 X220 y10 w200 h30, HIGH CICLO 
+    Gui, Add, Button, gB2 X220 y50 w200 h30, Doppia Anagrafica
+    Gui, Add, Button, gB3 X220 y90 w200 h30, 1xNRE
+    Gui, Add, Button, gB4 X220 y130 w200 h30, Bloccata D1
+    Gui, Add, Button, gB5 X220 y170 w200 h30, Errore Diabete
 
-    Gui, Show,, BLOCCO RICETTE 
+    Gui, Add, Button, gC1 X430 y10 w200 h30, LOW CICLO
+    Gui, Add, Button, gC2 X430 y50 w200 h30, C2 null
+    Gui, Add, Button, gC3 X430 y90 w200 h30, 2xNRE
+    Gui, Add, Button, gC4 X430 y130 w200 h30, Altro
+    Gui, Add, Button, gC5 X430 y170 w200 h30, C5 null
+
+    Gui, Show, x600 y700, SELEZIONA FUNZIONE
     return
 }
 
-00:
+A1:
+WinActivate, ahk_class Chrome_WidgetWin_1
+WinWaitActive, ahk_class Chrome_WidgetWin_1
+Sleep, 200
+Send, {NumpadAdd} 
+    return
+A2:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{Numpad7} 
+    return
+A3:
 WinActivate, ahk_class TscShellContainerClass
 WinWaitActive, ahk_class TscShellContainerClass
 Sleep, 200
 Send, !{Numpad0} 
     return
-01:
-WinActivate, ahk_class TscShellContainerClass
-WinWaitActive, ahk_class TscShellContainerClass
-Sleep, 200
-Send, !{Numpad1} 
-    return
-02:
-WinActivate, ahk_class TscShellContainerClass
-WinWaitActive, ahk_class TscShellContainerClass
-Sleep, 200
-Send, !{Numpad2} 
-    return
-03:
-WinActivate, ahk_class TscShellContainerClass
-WinWaitActive, ahk_class TscShellContainerClass
-Sleep, 200
-Send, !{Numpad3} 
-    return
-04:
-WinActivate, ahk_class TscShellContainerClass
-WinWaitActive, ahk_class TscShellContainerClass
-Sleep, 200
-Send, !{Numpad4} 
-    return
-05:
-WinActivate, ahk_class TscShellContainerClass
-WinWaitActive, ahk_class TscShellContainerClass
-Sleep, 200
-Send, !{Numpad5} 
-    return
-06:
-WinActivate, ahk_class TscShellContainerClass
-WinWaitActive, ahk_class TscShellContainerClass
-Sleep, 200
-Send, !{Numpad6} 
-    return
-07:
-WinActivate, ahk_class TscShellContainerClass
-WinWaitActive, ahk_class TscShellContainerClass
-Sleep, 200
-Send, !{Numpad7} 
-return
-08:
+A4:
 WinActivate, ahk_class TscShellContainerClass
 WinWaitActive, ahk_class TscShellContainerClass
 Sleep, 200
 Send, !{Numpad8} 
     return
-09:
+A5:
 WinActivate, ahk_class TscShellContainerClass
 WinWaitActive, ahk_class TscShellContainerClass
 Sleep, 200
 Send, !{Numpad9} 
+    return
+B1:
+WinActivate, ahk_class Chrome_WidgetWin_1
+WinWaitActive, ahk_class Chrome_WidgetWin_1
+Sleep, 200
+Send, !{NumpadDiv} 
+    return
+B2:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{Numpad4} 
+    return
+B3:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{Numpad1} 
+    return
+B4:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{Numpad5} 
+    return
+B5:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{Numpad6} 
+return
+
+C1:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{NumpadDot} 
+    return
+C2:
+return
+
+C3:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{Numpad2} 
+    return
+C4:
+WinActivate, ahk_class TscShellContainerClass
+WinWaitActive, ahk_class TscShellContainerClass
+Sleep, 200
+Send, !{Numpad3} 
+    return
+
+C5:
 return
